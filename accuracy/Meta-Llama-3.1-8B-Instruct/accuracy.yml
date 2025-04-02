@@ -1,0 +1,35 @@
+# accuracy configs for https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+model: "vllm"
+model_args:
+  pretrained: "meta-llama/Meta-Llama-3.1-8B-Instruct"
+num_fewshot:
+apply_chat_template: true
+fewshot_as_multiturn: true
+add_bos_token: false
+tasks:
+- name: "leaderboard_bbh"
+  metrics:
+  - name: "acc_norm,none"
+    value: 0.50946
+- name: "leaderboard_gpqa"
+  metrics:
+  - name: "acc_norm,none"
+    value: 0.29698
+- name: "leaderboard_ifeval"
+  metrics:
+  - name: "inst_level_loose_acc,none"
+    value: 0.85851
+  - name: "inst_level_strict_acc,none"
+    value: 0.82374
+  - name: "prompt_level_loose_acc,none"
+    value: 0.79667
+  - name: "prompt_level_strict_acc,none"
+    value: 0.74861
+- name: "leaderboard_math_hard"
+  metrics:
+  - name: "exact_match,none"
+    value: 0.19864
+- name: "leaderboard_musr"
+  metrics:
+  - name: "acc_norm,none"
+    value: 0.38359
