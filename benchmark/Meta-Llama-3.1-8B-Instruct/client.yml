@@ -5,3 +5,4 @@ data:
   output_tokens: 16
 rate-type: throughput
 max-seconds: 400
+output_path: ""
