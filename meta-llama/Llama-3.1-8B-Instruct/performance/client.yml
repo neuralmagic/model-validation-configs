@@ -1,6 +1,6 @@
 data:
   prompt_tokens: 64
-  output_tokens: 16
+  generated_tokens: 16
 data-type: emulated
 rate-type: throughput
 max-seconds: 400
