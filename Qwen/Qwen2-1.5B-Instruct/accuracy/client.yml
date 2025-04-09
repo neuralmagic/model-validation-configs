@@ -1,0 +1,7 @@
+# https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
+model: "vllm"
+model_args:
+  pretrained: "Qwen/Qwen2-1.5B-Instruct"
+num_fewshot: null
+apply_chat_template: true
+fewshot_as_multiturn: true

@@ -1,0 +1,28 @@
+# https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
+tasks:
+  - name: "leaderboard_bbh"
+    metrics:
+      - name: "acc_norm,none"
+        value: 0.382
+  - name: "leaderboard_gpqa"
+    metrics:
+      - name: "acc_norm,none"
+        value: 0.262
+  - name: "leaderboard_ifeval"
+    metrics:
+      - name: "inst_level_loose_acc,none"
+        value: 0.412
+      - name: "inst_level_strict_acc,none"
+        value: 0.393
+      - name: "prompt_level_loose_acc,none"
+        value: 0.305
+      - name: "prompt_level_strict_acc,none"
+        value: 0.281
+  - name: "leaderboard_math_hard"
+    metrics:
+      - name: "exact_match,none"
+        value: 0.058
+  - name: "leaderboard_musr"
+    metrics:
+      - name: "acc_norm,none"
+        value: 0.428
