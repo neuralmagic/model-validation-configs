@@ -9,6 +9,6 @@ The `accuracy` folder contains YAML configs needed for the model to be validated
 * client.yml: contains settings for the llm-eval-test harness for the model
 * accuracy.yml: contains evaluation tasks and accuracy expectations for the model
 
-The `benchmark` folder contains YAML configs needed for the model to be validated through the [guidellm](https://github.com/neuralmagic/guidellm). There are 3 config files for each model:
+The `performance` folder contains YAML configs needed for the model to be validated through the [guidellm](https://github.com/neuralmagic/guidellm). There are 2 config files for each model:
 * server.yml: contains settings to start a vllm server with the model
 * client.yml: contains settings for the guidellm for the model
