@@ -1,31 +1,31 @@
 tasks:
   - metrics:
       - name: exact_match,none
-        value: 0.6562763269
+        value: 0.656
     name: leaderboard_math_algebra_hard
   - metrics:
       - name: exact_match,none
-        value: 0.3818565401
+        value: 0.382
     name: leaderboard_math_counting_and_prob_hard
   - metrics:
       - name: exact_match,none
-        value: 0.369519833
+        value: 0.369
     name: leaderboard_math_geometry_hard
   - metrics:
       - name: exact_match,none
-        value: 0.2369878184
+        value: 0.237
     name: leaderboard_math_intermediate_algebra_hard
   - metrics:
       - name: exact_match,none
-        value: 0.3388888889
+        value: 0.339
     name: leaderboard_math_num_theory_hard
   - metrics:
       - name: exact_match,none
-        value: 0.653272101
+        value: 0.653
     name: leaderboard_math_prealgebra_hard
   - metrics:
       - name: exact_match,none
-        value: 0.2912087912
+        value: 0.291
     name: leaderboard_math_precalculus_hard
   - metrics:
       - name: acc_norm,none
@@ -33,7 +33,7 @@ tasks:
     name: leaderboard_bbh_boolean_expressions
   - metrics:
       - name: acc_norm,none
-        value: 0.5668449198
+        value: 0.567
     name: leaderboard_bbh_causal_judgement
   - metrics:
       - name: acc_norm,none
@@ -81,7 +81,7 @@ tasks:
     name: leaderboard_bbh_object_counting
   - metrics:
       - name: acc_norm,none
-        value: 0.4657534247
+        value: 0.466
     name: leaderboard_bbh_penguins_in_a_table
   - metrics:
       - name: acc_norm,none
@@ -97,7 +97,7 @@ tasks:
     name: leaderboard_bbh_salient_translation_error_detection
   - metrics:
       - name: acc_norm,none
-        value: 0.6235955056
+        value: 0.623
     name: leaderboard_bbh_snarks
   - metrics:
       - name: acc_norm,none
@@ -125,15 +125,15 @@ tasks:
     name: leaderboard_bbh_web_of_lies
   - metrics:
       - name: acc_norm,none
-        value: 0.2222222222
+        value: 0.222
     name: leaderboard_gpqa_diamond
   - metrics:
       - name: acc_norm,none
-        value: 0.2948717949
+        value: 0.295
     name: leaderboard_gpqa_extended
   - metrics:
       - name: acc_norm,none
-        value: 0.3013392857
+        value: 0.301
     name: leaderboard_gpqa_main
   - metrics:
       - name: acc_norm,none
@@ -141,7 +141,7 @@ tasks:
     name: leaderboard_musr_murder_mysteries
   - metrics:
       - name: acc_norm,none
-        value: 0.296875
+        value: 0.297
     name: leaderboard_musr_object_placements
   - metrics:
       - name: acc_norm,none
@@ -150,11 +150,11 @@ tasks:
   - name: leaderboard_ifeval
     metrics:
       - name: prompt_level_strict_acc,none
-        value: 0.7504621072
+        value: 0.750
       - name: prompt_level_loose_acc,none
-        value: 0.7948243993
+        value: 0.795
       - name: inst_level_loose_acc,none
-        value: 0.8549160671
+        value: 0.855
       - name: inst_level_strict_acc,none
-        value: 0.824940048
+        value: 0.825
     
