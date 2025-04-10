@@ -130,18 +130,18 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.472
   #   name: leaderboard_bbh_web_of_lies
-  # - metrics:
-  #     - name: acc_norm,none
-  #       value: 0.222
-  #   name: leaderboard_gpqa_diamond
-  # - metrics:
-  #     - name: acc_norm,none
-  #       value: 0.295
-  #   name: leaderboard_gpqa_extended
-  # - metrics:
-  #     - name: acc_norm,none
-  #       value: 0.301
-  #   name: leaderboard_gpqa_main
+  - metrics:
+      - name: acc_norm,none
+        value: 0.222
+    name: leaderboard_gpqa_diamond
+  - metrics:
+      - name: acc_norm,none
+        value: 0.295
+    name: leaderboard_gpqa_extended
+  - metrics:
+      - name: acc_norm,none
+        value: 0.301
+    name: leaderboard_gpqa_main
   # - name: leaderboard_musr_murder_mysteries
   #   metrics:
   #     - name: acc_norm,none
@@ -157,13 +157,13 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.348
 
-  - name: leaderboard_ifeval
-    metrics:
-      - name: prompt_level_strict_acc,none
-        value: 0.750
-      - name: prompt_level_loose_acc,none
-        value: 0.795
-      - name: inst_level_loose_acc,none
-        value: 0.855
-      - name: inst_level_strict_acc,none
-        value: 0.825
+  # - name: leaderboard_ifeval
+  #   metrics:
+  #     - name: prompt_level_strict_acc,none
+  #       value: 0.750
+  #     - name: prompt_level_loose_acc,none
+  #       value: 0.795
+  #     - name: inst_level_loose_acc,none
+  #       value: 0.855
+  #     - name: inst_level_strict_acc,none
+  #       value: 0.825
