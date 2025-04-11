@@ -123,20 +123,20 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.472
   #   name: leaderboard_bbh_web_of_lies
-  - name: leaderboard_gpqa_diamond
-    metrics:
-      - name: acc_norm,none
-        value: 0.338
+  # - name: leaderboard_gpqa_diamond
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.345
 
-  - name: leaderboard_gpqa_extended
-    metrics:
-      - name: acc_norm,none
-        value: 0.308
+  # - name: leaderboard_gpqa_extended
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.308
 
-  - name: leaderboard_gpqa_main
-    metrics:
-      - name: acc_norm,none
-        value: 0.312
+  # - name: leaderboard_gpqa_main
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.312
 
   # - metrics:
   #     - name: acc_norm,none
@@ -150,13 +150,13 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.304
   #   name: leaderboard_musr_team_allocation
-  # - name: leaderboard_ifeval
-  #   metrics:
-  #     - name: prompt_level_strict_acc,none
-  #       value: 0.750
-  #     - name: prompt_level_loose_acc,none
-  #       value: 0.795
-  #     - name: inst_level_loose_acc,none
-  #       value: 0.855
-  #     - name: inst_level_strict_acc,none
-  #       value: 0.825
+  - name: leaderboard_ifeval
+    metrics:
+      - name: prompt_level_strict_acc,none
+        value: 0.750
+      - name: prompt_level_loose_acc,none
+        value: 0.795
+      - name: inst_level_loose_acc,none
+        value: 0.855
+      - name: inst_level_strict_acc,none
+        value: 0.825
