@@ -123,18 +123,21 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.472
   #   name: leaderboard_bbh_web_of_lies
-  - metrics:
+  - name: leaderboard_gpqa_diamond
+    metrics:
       - name: acc_norm,none
-        value: 0.222
-    name: leaderboard_gpqa_diamond
-  - metrics:
+        value: 0.338
+
+  - name: leaderboard_gpqa_extended
+    metrics:
       - name: acc_norm,none
-        value: 0.295
-    name: leaderboard_gpqa_extended
-  - metrics:
+        value: 0.308
+
+  - name: leaderboard_gpqa_main
+    metrics:
       - name: acc_norm,none
-        value: 0.301
-    name: leaderboard_gpqa_main
+        value: 0.312
+
   # - metrics:
   #     - name: acc_norm,none
   #       value: 0.56
