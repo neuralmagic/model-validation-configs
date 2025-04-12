@@ -1,188 +1,188 @@
 tasks:
-  - name: leaderboard_math_algebra_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.656
+  # - name: leaderboard_math_algebra_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.656
 
-  - name: leaderboard_math_counting_and_prob_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.525
+  # - name: leaderboard_math_counting_and_prob_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.525
 
-  - name: leaderboard_math_geometry_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.438
+  # - name: leaderboard_math_geometry_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.438
 
-  - name: leaderboard_math_intermediate_algebra_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.251
+  # - name: leaderboard_math_intermediate_algebra_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.251
 
-  - name: leaderboard_math_num_theory_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.455
+  # - name: leaderboard_math_num_theory_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.455
 
-  - name: leaderboard_math_prealgebra_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.628
+  # - name: leaderboard_math_prealgebra_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.628
 
-  - name: leaderboard_math_precalculus_hard
-    metrics:
-      - name: exact_match,none
-        value: 0.341
+  # - name: leaderboard_math_precalculus_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.341
 
-  - name: leaderboard_bbh_boolean_expressions
-    metrics:
-      - name: acc_norm,none
-        value: 0.84
+  # - name: leaderboard_bbh_boolean_expressions
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.84
 
-  - name: leaderboard_bbh_causal_judgement
-    metrics:
-      - name: acc_norm,none
-        value: 0.567
+  # - name: leaderboard_bbh_causal_judgement
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.567
 
-  - name: leaderboard_bbh_date_understanding
-    metrics:
-      - name: acc_norm,none
-        value: 0.552
+  # - name: leaderboard_bbh_date_understanding
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.552
 
-  - name: leaderboard_bbh_disambiguation_qa
-    metrics:
-      - name: acc_norm,none
-        value: 0.688
+  # - name: leaderboard_bbh_disambiguation_qa
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.688
 
-  - name: leaderboard_bbh_formal_fallacies
-    metrics:
-      - name: acc_norm,none
-        value: 0.64
+  # - name: leaderboard_bbh_formal_fallacies
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.64
 
-  - name: leaderboard_bbh_geometric_shapes
-    metrics:
-      - name: acc_norm,none
-        value: 0.516
+  # - name: leaderboard_bbh_geometric_shapes
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.516
 
-  - name: leaderboard_bbh_hyperbaton
-    metrics:
-      - name: acc_norm,none
-        value: 0.536
+  # - name: leaderboard_bbh_hyperbaton
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.536
 
-  - name: leaderboard_bbh_logical_deduction_five_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.532
+  # - name: leaderboard_bbh_logical_deduction_five_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.532
 
-  - name: leaderboard_bbh_logical_deduction_seven_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.496
+  # - name: leaderboard_bbh_logical_deduction_seven_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.496
 
-  - name: leaderboard_bbh_logical_deduction_three_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.74
+  # - name: leaderboard_bbh_logical_deduction_three_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.74
 
-  - name: leaderboard_bbh_movie_recommendation
-    metrics:
-      - name: acc_norm,none
-        value: 0.664
+  # - name: leaderboard_bbh_movie_recommendation
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.664
 
-  - name: leaderboard_bbh_navigate
-    metrics:
-      - name: acc_norm,none
-        value: 0.68
+  # - name: leaderboard_bbh_navigate
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.68
 
-  - name: leaderboard_bbh_object_counting
-    metrics:
-      - name: acc_norm,none
-        value: 0.404
+  # - name: leaderboard_bbh_object_counting
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.404
 
-  - name: leaderboard_bbh_penguins_in_a_table
-    metrics:
-      - name: acc_norm,none
-        value: 0.562
+  # - name: leaderboard_bbh_penguins_in_a_table
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.562
 
-  - name: leaderboard_bbh_reasoning_about_colored_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.624
+  # - name: leaderboard_bbh_reasoning_about_colored_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.624
 
-  - name: leaderboard_bbh_ruin_names
-    metrics:
-      - name: acc_norm,none
-        value: 0.616
+  # - name: leaderboard_bbh_ruin_names
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.616
 
-  - name: leaderboard_bbh_salient_translation_error_detection
-    metrics:
-      - name: acc_norm,none
-        value: 0.536
+  # - name: leaderboard_bbh_salient_translation_error_detection
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.536
 
-  - name: leaderboard_bbh_snarks
-    metrics:
-      - name: acc_norm,none
-        value: 0.719
+  # - name: leaderboard_bbh_snarks
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.719
 
-  - name: leaderboard_bbh_sports_understanding
-    metrics:
-      - name: acc_norm,none
-        value: 0.684
+  # - name: leaderboard_bbh_sports_understanding
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.684
 
-  - name: leaderboard_bbh_temporal_sequences
-    metrics:
-      - name: acc_norm,none
-        value: 0.544
+  # - name: leaderboard_bbh_temporal_sequences
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.544
 
-  - name: leaderboard_bbh_tracking_shuffled_objects_five_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.208
+  # - name: leaderboard_bbh_tracking_shuffled_objects_five_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.208
 
-  - name: leaderboard_bbh_tracking_shuffled_objects_seven_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.156
+  # - name: leaderboard_bbh_tracking_shuffled_objects_seven_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.156
 
-  - name: leaderboard_bbh_tracking_shuffled_objects_three_objects
-    metrics:
-      - name: acc_norm,none
-        value: 0.28
+  # - name: leaderboard_bbh_tracking_shuffled_objects_three_objects
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.28
 
-  - name: leaderboard_bbh_web_of_lies
-    metrics:
-      - name: acc_norm,none
-        value: 0.536
+  # - name: leaderboard_bbh_web_of_lies
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.536
 
-  - name: leaderboard_gpqa_diamond
-    metrics:
-      - name: acc_norm,none
-        value: 0.345
+  # - name: leaderboard_gpqa_diamond
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.345
 
-  - name: leaderboard_gpqa_extended
-    metrics:
-      - name: acc_norm,none
-        value: 0.308
+  # - name: leaderboard_gpqa_extended
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.308
 
-  - name: leaderboard_gpqa_main
-    metrics:
-      - name: acc_norm,none
-        value: 0.312
+  # - name: leaderboard_gpqa_main
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.312
 
-  - name: leaderboard_musr_murder_mysteries
-    metrics:
-      - name: acc_norm,none
-        value: 0.532
+  # - name: leaderboard_musr_murder_mysteries
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.532
 
-  - name: leaderboard_musr_object_placements
-    metrics:
-      - name: acc_norm,none
-        value: 0.367
+  # - name: leaderboard_musr_object_placements
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.367
 
-  - name: leaderboard_musr_team_allocation
-    metrics:
-      - name: acc_norm,none
-        value: 0.388
+  # - name: leaderboard_musr_team_allocation
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.388
 
   - name: leaderboard_ifeval
     metrics:
