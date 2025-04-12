@@ -154,35 +154,35 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.536
 
-  # - name: leaderboard_gpqa_diamond
-  #   metrics:
-  #     - name: acc_norm,none
-  #       value: 0.345
-
-  # - name: leaderboard_gpqa_extended
-  #   metrics:
-  #     - name: acc_norm,none
-  #       value: 0.308
-
-  # - name: leaderboard_gpqa_main
-  #   metrics:
-  #     - name: acc_norm,none
-  #       value: 0.312
-
-  - name: leaderboard_musr_murder_mysteries
+  - name: leaderboard_gpqa_diamond
     metrics:
       - name: acc_norm,none
-        value: 0.532
+        value: 0.345
 
-  - name: leaderboard_musr_object_placements
+  - name: leaderboard_gpqa_extended
     metrics:
       - name: acc_norm,none
-        value: 0.367
+        value: 0.308
 
-  - name: leaderboard_musr_team_allocation
+  - name: leaderboard_gpqa_main
     metrics:
       - name: acc_norm,none
-        value: 0.388
+        value: 0.312
+
+  # - name: leaderboard_musr_murder_mysteries
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.532
+
+  # - name: leaderboard_musr_object_placements
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.367
+
+  # - name: leaderboard_musr_team_allocation
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.388
 
   # - name: leaderboard_ifeval
   #   metrics:
