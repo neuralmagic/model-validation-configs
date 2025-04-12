@@ -2,3 +2,4 @@
 model: "mistralai/Mixtral-8x7B-Instruct-v0.1"
 trust_remote_code: True
 add_bos_token: False
+tokenizer-mode: mistral
