@@ -154,43 +154,43 @@ tasks:
   #     - name: acc_norm,none
   #       value: 0.536
 
-  - name: leaderboard_gpqa_diamond
-    metrics:
-      - name: acc_norm,none
-        value: 0.345
+  # - name: leaderboard_gpqa_diamond
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.399
 
-  - name: leaderboard_gpqa_extended
-    metrics:
-      - name: acc_norm,none
-        value: 0.308
+  # - name: leaderboard_gpqa_extended
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.405
 
-  - name: leaderboard_gpqa_main
-    metrics:
-      - name: acc_norm,none
-        value: 0.312
+  # - name: leaderboard_gpqa_main
+  #   metrics:
+  #     - name: acc_norm,none
+  #       value: 0.393
 
   # - name: leaderboard_musr_murder_mysteries
   #   metrics:
   #     - name: acc_norm,none
-  #       value: 0.532
+  #       value: 0.556
 
   # - name: leaderboard_musr_object_placements
   #   metrics:
   #     - name: acc_norm,none
-  #       value: 0.367
+  #       value: 0.437
 
   # - name: leaderboard_musr_team_allocation
   #   metrics:
   #     - name: acc_norm,none
-  #       value: 0.388
+  #       value: 0.404
 
-  # - name: leaderboard_ifeval
-  #   metrics:
-  #     - name: prompt_level_strict_acc,none
-  #       value: 0.582
-  #     - name: prompt_level_loose_acc,none
-  #       value: 0.647
-  #     - name: inst_level_loose_acc,none
-  #       value: 0.748
-  #     - name: inst_level_strict_acc,none
-  #       value: 0.693
+  - name: leaderboard_ifeval
+    metrics:
+      - name: prompt_level_strict_acc,none
+        value: 0.582
+      - name: prompt_level_loose_acc,none
+        value: 0.647
+      - name: inst_level_loose_acc,none
+        value: 0.748
+      - name: inst_level_strict_acc,none
+        value: 0.693
