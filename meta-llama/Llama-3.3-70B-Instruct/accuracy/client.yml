@@ -1,0 +1,7 @@
+# https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+model: "vllm"
+model_args:
+  pretrained: "meta-llama/Llama-3.3-70B-Instruct"
+num_fewshot: null
+apply_chat_template: true
+fewshot_as_multiturn: true
