@@ -2,42 +2,42 @@ tasks:
   - name: leaderboard_math_algebra_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.7850
 
   - name: leaderboard_math_counting_and_prob_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.4634
 
   - name: leaderboard_math_geometry_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.3333
 
   - name: leaderboard_math_intermediate_algebra_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.2321
 
   - name: leaderboard_math_num_theory_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.5779
 
   - name: leaderboard_math_prealgebra_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.6683
 
   - name: leaderboard_math_precalculus_hard
     metrics:
       - name: exact_match,none
-        value: 0.0
+        value: 0.2740
 
   - name: leaderboard_bbh_boolean_expressions
     metrics:
       - name: acc_norm,none
-        value: 0.84
+        value: 0.844
 
   - name: leaderboard_bbh_causal_judgement
     metrics:
