@@ -1,5 +1,5 @@
 data:
   prompt_tokens: 64
-  generated_tokens: 16
+  output_tokens: 16
 rate-type: throughput
 max-seconds: 400
