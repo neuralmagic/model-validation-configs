@@ -12,7 +12,7 @@ tasks:
   - name: leaderboard_math_geometry_hard
     metrics:
       - name: exact_match,none
-        value: 0.359
+        value: 0.366
 
   - name: leaderboard_math_intermediate_algebra_hard
     metrics:
