@@ -1,0 +1,5 @@
+# server configs for https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
+model: "mistralai/Mistral-Small-24B-Instruct-2501"
+trust-remote-code: true
+enable-chunked-prefill: true
+max-model-len: 4096

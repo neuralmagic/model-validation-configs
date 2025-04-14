@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
+model: hf
+data: hf
