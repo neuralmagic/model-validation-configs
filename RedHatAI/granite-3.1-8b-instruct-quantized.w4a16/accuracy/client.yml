@@ -1,0 +1,8 @@
+# llm-eval-test configs for https://huggingface.co/RedHatAI/granite-3.1-8b-instruct-quantized.w4a16
+model: "vllm"
+model_args:
+  pretrained: "RedHatAI/granite-3.1-8b-instruct-quantized.w4a16"
+num_fewshot:
+apply_chat_template: true
+fewshot_as_multiturn: true
+add_bos_token: false
