@@ -2,4 +2,5 @@
 model: "meta-llama/Meta-Llama-3.1-8B-Instruct"
 trust-remote-code: true
 enable-chunked-prefill: true
+tensor-parallel-size: 100
 max-model-len: 4096
