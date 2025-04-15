@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/Mistral-7B-Instruct-v0.3-quantized.w4a16
+model: hf
+data: hf

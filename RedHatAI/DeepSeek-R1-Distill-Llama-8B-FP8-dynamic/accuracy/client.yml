@@ -1,0 +1,8 @@
+# llm-eval-test configs for https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Llama-8B-FP8-dynamic
+model: "vllm"
+model_args:
+  pretrained: "RedHatAI/DeepSeek-R1-Distill-Llama-8B-FP8-dynamic"
+num_fewshot:
+apply_chat_template: true
+fewshot_as_multiturn: true
+add_bos_token: false

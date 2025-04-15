@@ -1,0 +1,6 @@
+# server configs for https://huggingface.co/RedHatAI/whisper-large-v2-W4A16-G128
+model: "RedHatAI/whisper-large-v2-W4A16-G128"
+trust-remote-code: true
+enable-chunked-prefill: true
+tensor-parallel-size:
+max-model-len: 4096

@@ -1,0 +1,6 @@
+# server configs for https://huggingface.co/RedHatAI/Pixtral-Large-Instruct-2411-hf-quantized.w8a8
+model: "RedHatAI/Pixtral-Large-Instruct-2411-hf-quantized.w8a8"
+trust-remote-code: true
+enable-chunked-prefill: true
+tensor-parallel-size:
+max-model-len: 4096

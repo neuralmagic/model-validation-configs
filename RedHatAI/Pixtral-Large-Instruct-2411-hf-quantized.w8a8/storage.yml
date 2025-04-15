@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/Pixtral-Large-Instruct-2411-hf-quantized.w8a8
+model: hf
+data: hf

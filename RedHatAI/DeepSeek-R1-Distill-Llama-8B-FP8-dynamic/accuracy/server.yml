@@ -1,0 +1,6 @@
+# server configs for https://huggingface.co/RedHatAI/DeepSeek-R1-Distill-Llama-8B-FP8-dynamic
+model: "RedHatAI/DeepSeek-R1-Distill-Llama-8B-FP8-dynamic"
+trust-remote-code: true
+enable-chunked-prefill: true
+tensor-parallel-size:
+max-model-len: 4096

@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/whisper-large-v2-W4A16-G128
+model: hf
+data: hf
