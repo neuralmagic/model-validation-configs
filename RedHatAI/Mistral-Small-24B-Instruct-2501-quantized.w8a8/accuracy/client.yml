@@ -1,0 +1,8 @@
+# llm-eval-test configs for https://huggingface.co/RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8
+model: "vllm"
+model_args:
+  pretrained: "RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8"
+num_fewshot:
+apply_chat_template: true
+fewshot_as_multiturn: true
+add_bos_token: false

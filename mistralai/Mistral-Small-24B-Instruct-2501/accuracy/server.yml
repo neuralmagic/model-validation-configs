@@ -2,4 +2,5 @@
 model: "mistralai/Mistral-Small-24B-Instruct-2501"
 trust-remote-code: true
 enable-chunked-prefill: true
+tensor-parallel-size:
 max-model-len: 4096

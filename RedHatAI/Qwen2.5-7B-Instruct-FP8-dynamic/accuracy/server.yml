@@ -1,0 +1,6 @@
+# server configs for https://huggingface.co/RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic
+model: "RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic"
+trust-remote-code: true
+enable-chunked-prefill: true
+tensor-parallel-size:
+max-model-len: 4096
