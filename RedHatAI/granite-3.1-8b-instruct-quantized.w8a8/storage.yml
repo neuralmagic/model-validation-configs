@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/granite-3.1-8b-instruct-quantized.w8a8
+model: hf
+data: hf

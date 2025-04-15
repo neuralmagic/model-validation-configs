@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/phi-4-FP8-dynamic
+model: hf
+data: hf
