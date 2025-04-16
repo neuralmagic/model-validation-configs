@@ -3,8 +3,3 @@ tasks:
     metrics:
       - name: exact_match,none
         value: 0.347
-
-  - name: openllm
-    metrics:
-      - name: exact_match,none
-        value: 0.165
