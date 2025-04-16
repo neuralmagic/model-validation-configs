@@ -1,5 +1,5 @@
 tasks:
-  - name: leaderboard
+  - name: openllm
     metrics:
       - name: exact_match,none
         value: 0.347
