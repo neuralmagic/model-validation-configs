@@ -1,8 +1,3 @@
 # llm-eval-test configs for https://huggingface.co/RedHatAI/phi-4-quantized.w4a16
-model: "vllm"
-model_args:
-  pretrained: "RedHatAI/phi-4-quantized.w4a16"
-num_fewshot: 0
-apply_chat_template: true
-fewshot_as_multiturn: true
-add_bos_token: false
+model: "RedHatAI/phi-4-quantized.w4a16"
+chat_template: true
