@@ -2,5 +2,5 @@
 model: "RedHatAI/phi-4-quantized.w8a8"
 trust-remote-code: true
 enable-chunked-prefill: true
-tensor-parallel-size:
+tensor-parallel-size: 1
 max-model-len: 4096

@@ -2,5 +2,5 @@
 model: "RedHatAI/Meta-Llama-3.1-8B-Instruct-quantized.w4a16"
 trust-remote-code: true
 enable-chunked-prefill: true
-tensor-parallel-size:
+tensor-parallel-size: 1
 max-model-len: 4096
