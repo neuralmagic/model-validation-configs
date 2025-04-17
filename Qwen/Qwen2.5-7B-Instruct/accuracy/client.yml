@@ -1,0 +1,3 @@
+# https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+model: "Qwen/Qwen2.5-7B-Instruct"
+chat_template: true

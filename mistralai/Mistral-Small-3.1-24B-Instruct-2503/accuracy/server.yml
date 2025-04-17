@@ -1,0 +1,12 @@
+# server configs for https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
+model: "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+trust-remote-code: true
+enable-chunked-prefill: true
+tensor-parallel-size: 1
+max-model-len: 4096
+tokenizer-mode: "mistral"
+config-format: "mistral"
+load-format: "mistral"
+tool-call-parser: "mistral"
+enable-auto-tool-choice: true
+limit-mm-per-prompt: "image=10"

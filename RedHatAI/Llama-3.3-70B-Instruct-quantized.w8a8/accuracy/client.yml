@@ -1,0 +1,4 @@
+# llm-eval-test configs for https://huggingface.co/RedHatAI/Llama-3.3-70B-Instruct-quantized.w8a8
+model: "RedHatAI/Llama-3.3-70B-Instruct-quantized.w8a8"
+chat_template: true
+fewshot_as_multiturn: true
