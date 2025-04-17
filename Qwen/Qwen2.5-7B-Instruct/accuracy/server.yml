@@ -1,4 +1,6 @@
 # https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 model: "Qwen/Qwen2.5-7B-Instruct"
-trust_remote_code: True
-add_bos_token: False
+trust-remote-code: true
+add-bos-token: talse
+tensor-parallel-size: 1
+max-model-len: 8192

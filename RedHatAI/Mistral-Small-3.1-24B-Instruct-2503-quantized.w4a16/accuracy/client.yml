@@ -1,0 +1,5 @@
+# llm-eval-test configs for https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w4a16
+model: "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w4a16"
+chat_template: true
+fewshot_as_multiturn: true
+num_fewshot: 5

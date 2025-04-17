@@ -1,5 +1,5 @@
 # https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
 model: "mistralai/Mixtral-8x7B-Instruct-v0.1"
-trust_remote_code: True
-add_bos_token: False
-tokenizer-mode: mistral
+trust-remote-code: true
+add-bos-token: false
+tokenizer-mode: "mistral"

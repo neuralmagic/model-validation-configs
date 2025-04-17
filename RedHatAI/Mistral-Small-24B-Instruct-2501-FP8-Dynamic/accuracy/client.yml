@@ -1,3 +1,4 @@
 # llm-eval-test configs for https://huggingface.co/RedHatAI/Mistral-Small-24B-Instruct-2501-FP8-Dynamic
 model: "RedHatAI/Mistral-Small-24B-Instruct-2501-FP8-Dynamic"
 chat_template: true
+fewshot_as_multiturn: true

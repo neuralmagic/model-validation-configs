@@ -1,0 +1,3 @@
+# https://huggingface.co/RedHatAI/Qwen2.5-7B-Instruct-quantized.w4a16
+model: hf
+data: hf

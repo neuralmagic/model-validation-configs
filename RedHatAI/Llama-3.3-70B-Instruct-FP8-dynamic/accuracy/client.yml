@@ -1,3 +1,4 @@
 # llm-eval-test configs for https://huggingface.co/RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic
 model: "RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic"
 chat_template: true
+fewshot_as_multiturn: true

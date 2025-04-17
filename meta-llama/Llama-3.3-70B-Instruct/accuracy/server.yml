@@ -1,5 +1,7 @@
 # https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 model: "meta-llama/Llama-3.3-70B-Instruct"
-trust_remote_code: True
-add_bos_token: False
+trust-remote-code: true
+add-bos-token: false
 tool-call-parser: llama3_json
+tensor-parallel-size: 2
+max-model-len: 4096
