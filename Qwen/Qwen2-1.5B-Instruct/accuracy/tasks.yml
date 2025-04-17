@@ -4,17 +4,17 @@ tasks:
       - name: strict_match,none
         value: 0.347
 
-  - name: winogrande
-    metrics:
-      - name: acc,none
-        value: 0.347
+  # - name: winogrande
+  #   metrics:
+  #     - name: acc,none
+  #       value: 0.347
 
-  - name: ifeval
-    metrics:
-      - name: inst_level_strict_acc,none
-        value: 0.347
+  # - name: leaderboard-ifeval
+  #   metrics:
+  #     - name: inst_level_strict_acc,none
+  #       value: 0.347
 
-  - name: math-hard
+  - name: leaderboard-gpqa
     metrics:
       - name: exact_match,none
         value: 0.347
