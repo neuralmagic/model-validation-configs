@@ -9,12 +9,12 @@ tasks:
   #     - name: acc,none
   #       value: 0.347
 
-  # - name: leaderboard-ifeval
+  # - name: leaderboard_ifeval
   #   metrics:
   #     - name: inst_level_strict_acc,none
   #       value: 0.347
 
-  - name: leaderboard-gpqa
+  - name: leaderboard_gpqa
     metrics:
       - name: exact_match,none
         value: 0.347
