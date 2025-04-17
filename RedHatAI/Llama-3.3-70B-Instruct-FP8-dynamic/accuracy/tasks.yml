@@ -1,0 +1,66 @@
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.5196
+
+  - name: gsm8k
+    metrics:
+      - name: strict_match,none
+        value: 0.9492
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8643
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.8131
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.6321
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.8453
+
+  # - name: leaderboard_ifeval
+  #   metrics:
+  #     - name: inst_level_strict_acc,none
+  #       value: 0.9092
+
+  # - name: leaderboard_bbh
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.6284
+
+  # TODO: need to identify if this is available
+  # - name: leaderboard_math_v_5
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.0033
+
+  # - name: leaderboard_gpqa
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.463
+
+  # - name: leaderboard_musr
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.4396
+
+  # - name: leaderboard_mmlu_pro
+  #   metrics:
+  #     - name: acc,none
+  #       value: 0.515
+
+  # - name: humaneval
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.837
