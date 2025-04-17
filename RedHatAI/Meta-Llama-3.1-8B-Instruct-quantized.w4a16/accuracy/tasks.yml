@@ -1,7 +1,7 @@
 tasks:
-  - name: arc-challenge
+  - name: arc_challenge
     metrics:
-      - name: acc-norm,none
+      - name: acc_norm,none
         value: 0.802
 
   # - name: gsm8k_cot_llama_3.1_instruct
