@@ -11,7 +11,7 @@ tasks:
 
   - name: hellaswag
     metrics:
-      - name: acc-norm,none
+      - name: acc_norm,none
         value: 0.805
 
   - name: mmlu
@@ -19,9 +19,9 @@ tasks:
       - name: acc,none
         value: 0.6795
 
-  - name: truthfulqa
+  - name: truthfulqa_mc2
     metrics:
-      - name: mc2,none
+      - name: acc,none
         value: 0.545
 
   - name: winogrande
