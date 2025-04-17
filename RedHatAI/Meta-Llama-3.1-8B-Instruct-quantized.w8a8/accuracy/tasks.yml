@@ -2,27 +2,27 @@ tasks:
   - name: arc-challenge
     metrics:
       - name: acc-norm,none
-        value: 0.82
+        value: 0.817
 
   # - name: gsm8k_cot_llama_3.1_instruct
   #   metrics:
   #     - name: strict_match,none
-  #       value: 0.82
+  #       value: 0.848
 
   - name: hellaswag
     metrics:
       - name: acc-norm,none
-        value: 0.805
+        value: 0.803
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.6795
+        value: 0.678
 
   - name: truthfulqa
     metrics:
       - name: mc2,none
-        value: 0.545
+        value: 0.547
 
   - name: winogrande
     metrics:
@@ -32,23 +32,23 @@ tasks:
   # - name: leaderboard_ifeval
   #   metrics:
   #     - name: inst_level_strict_acc,none
-  #       value: 0.779
+  #       value: 0.78
 
   # - name: leaderboard_bbh
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.301
+  #       value: 0.31
 
   # TODO: need to identify if this is available
   # - name: leaderboard_math_v_5
   #   metrics:
   #     - name: exact_match,none
-  #       value: 0.157
+  #       value: 0.155
 
   # - name: leaderboard_gpqa
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.037
+  #       value: 0.054
 
   # - name: leaderboard_musr
   #   metrics:
@@ -58,9 +58,9 @@ tasks:
   # - name: leaderboard_mmlu_pro
   #   metrics:
   #     - name: acc,none
-  #       value: 0.308
+  #       value: 0.309
 
   # - name: humaneval
   #   metrics:
   #     - name: exact_match,none
-  #       value: 0.673
+  #       value: 0.671
