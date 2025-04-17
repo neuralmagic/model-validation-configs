@@ -1,8 +1,8 @@
 tasks:
-  # - name: arc-challenge
-  #   metrics:
-  #     - name: acc-norm,none
-  #       value: 0.6288
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.6288
 
   - name: gsm8k
     metrics:
@@ -11,7 +11,7 @@ tasks:
 
   - name: hellaswag
     metrics:
-      - name: acc-norm,none
+      - name: acc_norm,none
         value: 0.8342
 
   - name: mmlu
@@ -19,9 +19,9 @@ tasks:
       - name: acc,none
         value: 0.7987
 
-  - name: truthfulqa
+  - name: truthfulqa_mc2
     metrics:
-      - name: mc2,none
+      - name: acc,none
         value: 0.5918
 
   - name: winogrande
