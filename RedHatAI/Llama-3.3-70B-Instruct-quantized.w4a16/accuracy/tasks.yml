@@ -1,0 +1,31 @@
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.4949
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.9447
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8597
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.8062
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.6166
+
+  # not available in model card as of 20250417
+  # - name: winogrande
+  #   metrics:
+  #     - name: acc,none
+  #       value: 0.8058
