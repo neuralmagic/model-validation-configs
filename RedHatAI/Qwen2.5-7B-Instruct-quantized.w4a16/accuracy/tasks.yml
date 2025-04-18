@@ -6,7 +6,7 @@ tasks:
 
   - name: gsm8k
     metrics:
-      - name: strict_match,none
+      - name: exact_match,strict-match
         value: 0.8059
 
   - name: hellaswag
