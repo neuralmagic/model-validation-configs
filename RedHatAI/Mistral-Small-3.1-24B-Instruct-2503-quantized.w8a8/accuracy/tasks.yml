@@ -2,32 +2,32 @@ tasks:
   - name: arc_challenge
     metrics:
       - name: acc_norm,none
-        value: 0.7278
+        value: 0.7346
 
   - name: gsm8k
     metrics:
       - name: strict_match,none
-        value: 0.6535
+        value: 0.7058
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.837
+        value: 0.8226
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.8067
+        value: 0.804
 
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.7062
+        value: 0.6915
 
   - name: winogrande
     metrics:
       - name: acc,none
-        value: 0.8374
+        value: 0.809
 
   # following are placeholders for mid-level "leaderboard_*" tasks
   # (OpenLLM v2) waiting for info on how to calculate the metric
@@ -36,19 +36,19 @@ tasks:
   # - name: leaderboard_gpqa_main
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.4263
+  #       value: 0.4464
 
   # - name: leaderboard_gpqa_diamond
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.4596
+  #       value: 0.4192
 
   # - name: leaderboard_mmlu_pro
   #   metrics:
   #     - name: acc,none
-  #       value: 0.6725
+  #       value: 0.6654
 
   # - name: humaneval
   #   metrics:
   #     - name: exact_match,none
-  #       value: 0.847
+  #       value: 0.842
