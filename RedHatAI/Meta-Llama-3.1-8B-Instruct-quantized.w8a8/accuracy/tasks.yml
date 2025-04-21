@@ -4,10 +4,10 @@ tasks:
       - name: acc_norm,none
         value: 0.817
 
-  # - name: gsm8k_cot_llama_3.1_instruct
-  #   metrics:
-  #     - name: strict_match,none
-  #       value: 0.848
+  - name: gsm8k_cot_llama_3.1_instruct
+    metrics:
+      - name: strict_match,none
+        value: 0.848
 
   - name: hellaswag
     metrics:
