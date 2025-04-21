@@ -29,6 +29,10 @@ tasks:
       - name: acc,none
         value: 0.8477
 
+  # following are placeholders for mid-level "leaderboard_*" tasks
+  # (OpenLLM v2) waiting for info on how to calculate the metric
+  # values from the individual sub tasks.
+
   # - name: leaderboard_ifeval
   #   metrics:
   #     - name: inst_level_strict_acc,none
