@@ -1,6 +1,9 @@
 # server configs for https://huggingface.co/RedHatAI/granite-3.1-8b-instruct-quantized.w8a8
-model: "RedHatAI/granite-3.1-8b-instruct-quantized.w8a8"
+pretrained: "RedHatAI/granite-3.1-8b-instruct-quantized.w8a8"
 trust-remote-code: true
 enable-chunked-prefill: true
 tensor-parallel-size: 1
 max-model-len: 4096
+gpu_memory_utilization: 0.8
+add_bos_token: true
+dtype: "auto"
