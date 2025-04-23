@@ -5,7 +5,7 @@ tasks:
       - name: acc_norm,none
         value: 0.812
 
-  - name: gsm8k_cot_llama_3.1_instruct
+  - name: gsm8k
     metrics:
       - name: strict_match,none
         value: 0.82
