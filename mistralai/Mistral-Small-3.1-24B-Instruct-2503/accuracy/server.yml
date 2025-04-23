@@ -6,7 +6,4 @@ tensor-parallel-size: 1
 max-model-len: 4096
 tokenizer-mode: "mistral"
 config-format: "mistral"
-load-format: "mistral"
-tool-call-parser: "mistral"
-enable-auto-tool-choice: true
 limit-mm-per-prompt: "image=10"
