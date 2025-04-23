@@ -1,5 +1,6 @@
 tasks:
   - name: arc_challenge
+    rtol: 0.06
     metrics:
       - name: acc_norm,none
         value: 0.7218
@@ -20,11 +21,13 @@ tasks:
         value: 0.7974
 
   - name: truthfulqa_mc2
+    rtol: 0.11
     metrics:
       - name: acc,none
         value: 0.6956
 
   - name: winogrande
+    rtol: 0.06
     metrics:
       - name: acc,none
         value: 0.8343
