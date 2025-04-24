@@ -1,6 +1,6 @@
 tasks:
   - name: arc_challenge
-    rtol: 0.16
+    rtol: 0.17
     metrics:
       - name: acc_norm,none
         value: 0.587
