@@ -2,8 +2,9 @@
 model: "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
 trust-remote-code: true
 enable-chunked-prefill: true
-tensor-parallel-size: 1
-max-model-len: 4096
+tensor-parallel-size: 2
+max-model-len: 8192
+gpu_memory_utilization: 0.5
 tokenizer-mode: "mistral"
 config-format: "mistral"
 load_format: "mistral"
