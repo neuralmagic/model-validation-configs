@@ -7,6 +7,3 @@ max-model-len: 4096
 tokenizer-mode: "mistral"
 config-format: "mistral"
 load_format: "mistral"
-enable-auto-tool-choice: true
-tool-call-parser: "mistral"
-
