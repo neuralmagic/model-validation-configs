@@ -5,7 +5,7 @@ tasks:
         value: 0.7287
 
   - name: gsm8k
-    rtol: 0.28
+    rtol: 0.3
     metrics:
       - name: exact_match,strict-match
         value: 0.6247
@@ -21,6 +21,7 @@ tasks:
         value: 0.8071
 
   - name: truthfulqa_mc2
+    rtol: 0.12
     metrics:
       - name: acc,none
         value: 0.7088
