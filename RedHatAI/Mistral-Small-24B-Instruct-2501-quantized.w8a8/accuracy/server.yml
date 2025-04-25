@@ -9,3 +9,4 @@ config-format: "mistral"
 load_format: "mistral"
 enable-auto-tool-choice: true
 tool-call-parser: "mistral"
+gpu_memory_utilization: 0.8
