@@ -1,4 +1,4 @@
 # llm-eval-test configs for https://huggingface.co/RedHatAI/phi-4-FP8-dynamic
 model: "RedHatAI/phi-4-FP8-dynamic"
-chat_template: true
+chat-template: false
 batch_size: "auto"
