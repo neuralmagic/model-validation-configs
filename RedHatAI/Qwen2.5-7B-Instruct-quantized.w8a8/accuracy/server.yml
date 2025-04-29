@@ -1,5 +1,0 @@
-# server configs for https://huggingface.co/RedHatAI/Qwen2.5-7B-Instruct-quantized.w8a8
-model: "RedHatAI/Qwen2.5-7B-Instruct-quantized.w8a8"
-trust-remote-code: true
-tensor-parallel-size: 1
-max-model-len: 8192
