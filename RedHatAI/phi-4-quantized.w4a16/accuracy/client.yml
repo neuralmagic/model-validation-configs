@@ -1,4 +1,2 @@
 # llm-eval-test configs for https://huggingface.co/RedHatAI/phi-4-quantized.w4a16
 model: "RedHatAI/phi-4-quantized.w4a16"
-no-chat-template: false
-batch_size: "auto"
