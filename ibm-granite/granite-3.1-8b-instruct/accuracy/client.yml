@@ -1,4 +1,3 @@
 # llm-eval-test configs for https://huggingface.co/ibm-granite/granite-3.1-8b-instruct
 model: "ibm-granite/granite-3.1-8b-instruct"
-chat_template: true
-fewshot_as_multiturn: true
+no-chat-template: true

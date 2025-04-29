@@ -1,3 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
-model: "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
-chat_template: true
