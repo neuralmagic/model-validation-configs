@@ -1,8 +1,1 @@
-tasks:
-  - name: openllm
-    configs:
-      - no-chat-template: true
-
-  - name: leaderboard
-    configs:
-      - chat-template: true
+no-chat-template: true

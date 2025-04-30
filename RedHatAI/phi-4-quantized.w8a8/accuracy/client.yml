@@ -1,5 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/RedHatAI/phi-4-quantized.w8a8
-tasks:
-  - name: openllm
-    configs:
-      - no-chat-template: true

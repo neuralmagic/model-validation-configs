@@ -1,5 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-quantized.w8a8
-tasks:
-  - name: openllm
-    configs:
-      - chat-template: true

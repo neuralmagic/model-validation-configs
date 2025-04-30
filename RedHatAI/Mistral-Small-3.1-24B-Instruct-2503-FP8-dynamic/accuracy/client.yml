@@ -1,5 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic
-tasks:
-  - name: openllm
-    configs:
-      - chat-template: true

@@ -1,9 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/RedHatAI/granite-3.1-8b-instruct-FP8-dynamic
-tasks:
-  - name: openllm
-    configs:
-      - no-chat-template: true
-
-  - name: leaderboard
-    configs:
-      - no-chat-template: true
