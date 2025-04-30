@@ -1,5 +1,8 @@
-# llm-eval-test configs for https://huggingface.co/microsoft/phi-4
 tasks:
   - name: openllm
     configs:
       - no-chat-template: true
+
+  - name: leaderboard
+    configs:
+      - chat-template: true
