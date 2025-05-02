@@ -1,5 +1,4 @@
-# server configs for https://huggingface.co/microsoft/phi-4
-model: "microsoft/phi-4"
+uvicorn-log-level: "debug"
 trust-remote-code: true
 enable-chunked-prefill: true
 tensor-parallel-size: 1

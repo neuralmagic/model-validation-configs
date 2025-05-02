@@ -1,3 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct
-model: "meta-llama/Llama-4-Maverick-17B-128E-Instruct"
-chat_template: true

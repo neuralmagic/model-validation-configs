@@ -1,5 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic
-model: "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic"
-chat_template: true
-fewshot_as_multiturn: true
-num_fewshot: 5

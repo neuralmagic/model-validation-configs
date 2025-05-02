@@ -1,6 +1,0 @@
-# server configs for https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
-model: "meta-llama/Llama-4-Scout-17B-16E-Instruct"
-trust-remote-code: true
-enable-chunked-prefill: true
-tensor-parallel-size: 1
-max-model-len: 4096
