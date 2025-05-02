@@ -1,7 +1,6 @@
 # server configs for https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic
 model: "RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic"
 trust-remote-code: true
-enable-chunked-prefill: true
 tensor-parallel-size: 2
-max-model-len: 8192
+max-model-len: 16384
 gpu_memory_utilization: 0.5

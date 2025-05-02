@@ -13,7 +13,7 @@ tasks:
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.8467
+        value: 0.8367
 
   - name: mmlu
     metrics:
