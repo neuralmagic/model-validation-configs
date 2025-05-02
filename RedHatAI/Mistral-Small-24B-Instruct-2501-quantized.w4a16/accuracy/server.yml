@@ -1,9 +1,8 @@
 # server configs for https://huggingface.co/RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w4a16
 model: "RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w4a16"
 trust-remote-code: true
-enable-chunked-prefill: true
 tensor-parallel-size: 1
-max-model-len: 4096
+max-model-len: 16384
 tokenizer-mode: "mistral"
 config-format: "mistral"
 load_format: "mistral"
