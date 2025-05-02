@@ -1,5 +1,0 @@
-data:
-  prompt_tokens: 64
-  output_tokens: 16
-rate-type: throughput
-max-seconds: 400

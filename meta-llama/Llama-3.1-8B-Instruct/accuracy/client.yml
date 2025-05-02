@@ -1,3 +1,0 @@
-# llm-eval-test configs for https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-model: "meta-llama/Llama-3.1-8B-Instruct"
-chat_template: true

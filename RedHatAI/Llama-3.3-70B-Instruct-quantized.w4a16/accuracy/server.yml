@@ -1,6 +1,5 @@
 # server configs for https://huggingface.co/RedHatAI/Llama-3.3-70B-Instruct-quantized.w4a16
 model: "RedHatAI/Llama-3.3-70B-Instruct-quantized.w4a16"
 trust-remote-code: true
-enable-chunked-prefill: true
-tensor-parallel-size: 1
-max-model-len: 4096
+tensor-parallel-size: 8
+max-model-len: 16384
