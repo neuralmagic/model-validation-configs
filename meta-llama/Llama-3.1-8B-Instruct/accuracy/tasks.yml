@@ -9,7 +9,7 @@ tasks:
     rtol: 0.09
     metrics:
       - name: exact_match,strict-match
-        value: 0.82
+        value: 0.828
 
   - name: hellaswag
     metrics:
@@ -19,7 +19,7 @@ tasks:
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.6795
+        value: 0.683
 
   - name: truthfulqa_mc2
     metrics:
@@ -30,7 +30,7 @@ tasks:
     rtol: 0.07
     metrics:
       - name: acc,none
-        value: 0.785
+        value: 0.781
 
   # following are placeholders for mid-level "leaderboard_*" tasks
   # (OpenLLM v2) waiting for info on how to calculate the metric
