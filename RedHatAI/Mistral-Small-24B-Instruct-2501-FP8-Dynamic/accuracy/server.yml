@@ -6,4 +6,4 @@ max-model-len: 16384
 tokenizer-mode: "mistral"
 config-format: "mistral"
 load_format: "mistral"
-gpu_memory_utilization: 0.8
+gpu-memory-utilization: 0.8
