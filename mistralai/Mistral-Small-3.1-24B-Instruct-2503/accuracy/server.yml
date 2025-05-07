@@ -1,0 +1,10 @@
+# server configs for https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
+model: "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+trust-remote-code: true
+tensor-parallel-size: 2
+max-model-len: 16384
+gpu_memory_utilization: 0.5
+tokenizer-mode: "mistral"
+config-format: "mistral"
+load_format: "mistral"
+limit-mm-per-prompt: "image=10"
