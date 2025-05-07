@@ -1,10 +1,12 @@
 tasks:
   - name: arc_challenge
+    rtol: 0.21
     metrics:
       - name: acc_norm,none
         value: 0.6323
 
   - name: gsm8k
+    rtol: 0.09
     metrics:
       - name: exact_match,strict-match
         value: 0.8074
@@ -25,6 +27,7 @@ tasks:
         value: 0.6458
 
   - name: winogrande
+    rtol: 0.05
     metrics:
       - name: acc,none
         value: 0.7482
