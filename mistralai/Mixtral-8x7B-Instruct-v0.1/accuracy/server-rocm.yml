@@ -1,0 +1,4 @@
+# https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
+model: 'mistralai/Mixtral-8x7B-Instruct-v0.1'
+trust-remote-code: true
+max-model-len: 16384
