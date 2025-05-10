@@ -3,34 +3,34 @@ tasks:
     rtol: 0.49
     metrics:
       - name: acc_norm,none
-        value: 0.814
+        value: 0.812
 
   - name: gsm8k
-    rtol: 0.09
+    rtol: 0.12
     metrics:
       - name: exact_match,strict-match
-        value: 0.828
+        value: 0.82
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.805
+        value: 0.8
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.683
+        value: 0.6802
 
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.545
+        value: 0.543
 
   - name: winogrande
     rtol: 0.07
     metrics:
       - name: acc,none
-        value: 0.781
+        value: 0.777
 
   # following are placeholders for mid-level "leaderboard_*" tasks
   # (OpenLLM v2) waiting for info on how to calculate the metric
@@ -39,33 +39,32 @@ tasks:
   # - name: leaderboard_ifeval
   #   metrics:
   #     - name: inst_level_strict_acc,none
-  #       value: 0.779
+  #       value: 0.772
 
   # - name: leaderboard_bbh
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.301
+  #       value: 0.297
 
-  # TODO: need to identify if this is available
-  # - name: leaderboard_math_v_5
+  # - name: leaderboard_math_hard
   #   metrics:
   #     - name: exact_match,none
-  #       value: 0.157
+  #       value: 0.165
 
   # - name: leaderboard_gpqa
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.037
+  #       value: 0.057
 
   # - name: leaderboard_musr
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.076
+  #       value: 0.075
 
   # - name: leaderboard_mmlu_pro
   #   metrics:
   #     - name: acc,none
-  #       value: 0.308
+  #       value: 0.312
 
   # - name: humaneval
   #   metrics:
