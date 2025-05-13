@@ -1,4 +1,6 @@
+# common/accuracy/server.yml
 trust-remote-code: true
 tensor-parallel-size: 1
 max-model-len: 16384
+# override
 gpu_memory_utilization: 0.6
