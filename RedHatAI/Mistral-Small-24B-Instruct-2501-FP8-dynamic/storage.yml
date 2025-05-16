@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/Mistral-Small-24B-Instruct-2501-FP8-dynamic
+model: hf
+data: hf
