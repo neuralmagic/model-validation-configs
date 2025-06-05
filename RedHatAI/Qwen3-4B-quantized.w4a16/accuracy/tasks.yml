@@ -1,0 +1,31 @@
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.587
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.7908
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.7939
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.7347
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.5548
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.7601
+
