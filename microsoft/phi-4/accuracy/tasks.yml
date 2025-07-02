@@ -1,18 +1,19 @@
+# from gs://nm-vllm-certs/model-validation/lmeval/microsoft/phi-4/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786302755.json
 tasks:
   - name: arc_challenge
     metrics:
       - name: acc_norm,none
-        value: 0.6442
+        value: 0.6825
 
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.9007
+        value: 0.8999
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.8437
+        value: 0.8435
 
   - name: mmlu
     metrics:
@@ -22,9 +23,35 @@ tasks:
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.5937
+        value: 0.5934
 
   - name: winogrande
     metrics:
       - name: acc,none
-        value: 0.8058
+        value: 0.8011
+
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.0587
+
+  - name: leaderboard_gpqa_diamond
+    metrics:
+      - name: acc-norm,none
+        value: 0.3939
+
+  - name: leaderboard_gpqa_extended
+    metrics:
+      - name: acc-norm,none
+        value: 0.3882
+
+  - name: leaderboard_gpqa_main
+    metrics:
+      - name: acc-norm,none
+        value: 0.4129
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.53
+  
