@@ -1,3 +1,4 @@
+# from gs://nm-vllm-certs/model-validation/lmeval/Qwen/Qwen2.5-7B-Instruct/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786279345.json
 tasks:
   - name: arc_challenge
     metrics:
@@ -29,3 +30,28 @@ tasks:
       - name: acc,none
         value: 0.7466
 
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.0587
+
+  - name: leaderboard_gpqa_diamond
+    metrics:
+      - name: acc-norm,none
+        value: 0.3939
+
+  - name: leaderboard_gpqa_extended
+    metrics:
+      - name: acc-norm,none
+        value: 0.3882
+
+  - name: leaderboard_gpqa_main
+    metrics:
+      - name: acc-norm,none
+        value: 0.4129
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.53
+  
