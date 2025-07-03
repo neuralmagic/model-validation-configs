@@ -1,4 +1,4 @@
-# from https://huggingface.co/RedHatAI/Llama-4-Scout-17B-16E-Instruct-FP8-dynamic
+# from RedHatAI/Llama-4-Scout-17B-16E-Instruct-FP8-dynamic
 tasks:
   - name: arc_challenge
     metrics:
@@ -59,4 +59,3 @@ tasks:
     metrics:
       - name: acc,none
         value: 0.557
-  

@@ -59,4 +59,3 @@ tasks:
     metrics:
       - name: acc,none
         value: 0.5545
-  

@@ -1,3 +1,4 @@
+# from RedHatAI/Qwen2.5-7B-Instruct-quantized.w4a16
 tasks:
   - name: arc_challenge
     metrics:
@@ -28,4 +29,3 @@ tasks:
     metrics:
       - name: acc,none
         value: 0.7466
-

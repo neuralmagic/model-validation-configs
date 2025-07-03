@@ -1,3 +1,4 @@
+# no RedHatAI model cards use this base model
 tasks:
   - name: arc_challenge
     metrics:
@@ -28,4 +29,3 @@ tasks:
     metrics:
       - name: acc,none
         value: 0.8224
-

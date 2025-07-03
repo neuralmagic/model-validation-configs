@@ -1,3 +1,4 @@
+# from RedHatAI/granite-3.1-8b-instruct-quantized.w8a8
 tasks:
   - name: arc_challenge
     metrics:
@@ -63,4 +64,3 @@ tasks:
   #   metrics:
   #     - name: exact_match,none
   #       value: 0.71
-  
