@@ -1,28 +1,60 @@
-# accuracy configs for https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 tasks:
-- name: "leaderboard_bbh"
-  metrics:
-  - name: "acc_norm,none"
-    value: 0.50946
-- name: "leaderboard_gpqa"
-  metrics:
-  - name: "acc_norm,none"
-    value: 0.29698
-- name: "leaderboard_ifeval"
-  metrics:
-  - name: "inst_level_loose_acc,none"
-    value: 0.85851
-  - name: "inst_level_strict_acc,none"
-    value: 0.82374
-  - name: "prompt_level_loose_acc,none"
-    value: 0.79667
-  - name: "prompt_level_strict_acc,none"
-    value: 0.74861
-- name: "leaderboard_math_hard"
-  metrics:
-  - name: "exact_match,none"
-    value: 0.19864
-- name: "leaderboard_musr"
-  metrics:
-  - name: "acc_norm,none"
-    value: 0.38359
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.7363
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.9302
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8742
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.861
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.6015
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.8082
+
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.7446
+
+  # - name: leaderboard_bbh
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.6315
+
+  # - name: leaderboard_math_v_5
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.0017
+
+  # - name: leaderboard_gpqa
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.461
+
+  # - name: leaderboard_musr
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.4435
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.6479
