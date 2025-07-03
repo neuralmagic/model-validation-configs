@@ -1,0 +1,61 @@
+# from RedHatAI/Llama-3.3-70B-Instruct-quantized.w8a8
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.4923
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.9416
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8649
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.816
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.6275
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.8477
+
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.9089
+
+  - name: leaderboard_bbh
+    metrics:
+      - name: acc-norm,none
+        value: 0.6315
+
+  - name: leaderboard_math_v_5
+    metrics:
+      - name: exact_match,none
+        value: 0.0017
+
+  - name: leaderboard_gpqa
+    metrics:
+      - name: acc-norm,none
+        value: 0.461
+
+  - name: leaderboard_musr
+    metrics:
+      - name: acc-norm,none
+        value: 0.4435
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.5189
