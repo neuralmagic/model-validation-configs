@@ -1,61 +1,62 @@
+# from https://huggingface.co/RedHatAI/Llama-4-Scout-17B-16E-Instruct-FP8-dynamic
 tasks:
   - name: arc_challenge
     metrics:
       - name: acc_norm,none
-        value: 0.6936
+        value: 0.6937
 
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.9044
+        value: 0.9045
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.8514
+        value: 0.8523
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.8042
+        value: 0.8054
 
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.5975
+        value: 0.6141
 
   - name: winogrande
     metrics:
       - name: acc,none
-        value: 0.7861
+        value: 0.7790
 
   - name: leaderboard_ifeval
     metrics:
       - name: inst_level_strict_acc,none
-        value: 0.7889
+        value: 0.8690
 
   # - name: leaderboard_bbh
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.5319
+  #       value: 0.6513
 
   # - name: leaderboard_math_hard
   #   metrics:
   #     - name: exact_match,none
-  #       value: 0.1477
+  #       value: 0.5778
 
   # - name: leaderboard_gpqa
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.3176
+  #       value: 0.3188
 
   # - name: leaderboard_musr
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.4601
+  #       value: 0.422
 
   - name: leaderboard_mmlu_pro
     metrics:
       - name: acc,none
-        value: 0.5554
+        value: 0.557
   
