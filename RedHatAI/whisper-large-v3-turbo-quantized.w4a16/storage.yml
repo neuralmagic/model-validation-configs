@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/whisper-large-v3-turbo-quantized.w4a16
+model: hf
+data: hf
