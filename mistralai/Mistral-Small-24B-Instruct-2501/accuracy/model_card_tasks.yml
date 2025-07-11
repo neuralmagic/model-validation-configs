@@ -1,45 +1,52 @@
-# from gs://nm-vllm-certs/model-validation/lmeval/mistralai/Mistral-Small-24B-Instruct-2501/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786286971.json
+# from RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w4a16
 tasks:
   - name: arc_challenge
     metrics:
       - name: acc_norm,none
-        value: 0.7244
+        value: 0.7218
 
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.8953
+        value: 0.9014
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.8487
+        value: 0.8505
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.8037
+        value: 0.8069
 
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.6494
+        value: 0.6555
 
   - name: winogrande
     metrics:
       - name: acc,none
-        value: 0.8184
+        value: 0.8311
 
   - name: leaderboard_ifeval
     metrics:
       - name: inst_level_strict_acc,none
-        value: 0.6882
+        value: 0.7327
 
-  # - name: leaderboard_bbh
-  #   metrics:
-  #     - name: acc-norm,none
-  #       value: 0.4518
+  - name: leaderboard_bbh
+    metrics:
+      - name: acc-norm,none
+        value: 0.4518
 
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.3883
+  
+  # ignored because quantized.w4a16 model card indicates these
+  # aren't considered viable for recovery calculation
   # - name: leaderboard_gpqa
   #   metrics:
   #     - name: acc-norm,none
@@ -49,8 +56,3 @@ tasks:
   #   metrics:
   #     - name: acc-norm,none
   #       value: 0.784
-
-  - name: leaderboard_mmlu_pro
-    metrics:
-      - name: acc,none
-        value: 0.5389

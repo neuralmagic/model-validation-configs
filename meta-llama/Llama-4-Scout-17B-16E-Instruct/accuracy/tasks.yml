@@ -1,28 +1,61 @@
-# accuracy configs for https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+# from gs://nm-vllm-certs/model-validation/lmeval/meta-llama/Llama-4-Scout-17B-16E-Instruct/cuda/0.8.4.post1/gpu19-h100-octo/llm_eval_0.json
 tasks:
-- name: "leaderboard_bbh"
-  metrics:
-  - name: "acc_norm,none"
-    value: 0.50946
-- name: "leaderboard_gpqa"
-  metrics:
-  - name: "acc_norm,none"
-    value: 0.29698
-- name: "leaderboard_ifeval"
-  metrics:
-  - name: "inst_level_loose_acc,none"
-    value: 0.85851
-  - name: "inst_level_strict_acc,none"
-    value: 0.82374
-  - name: "prompt_level_loose_acc,none"
-    value: 0.79667
-  - name: "prompt_level_strict_acc,none"
-    value: 0.74861
-- name: "leaderboard_math_hard"
-  metrics:
-  - name: "exact_match,none"
-    value: 0.19864
-- name: "leaderboard_musr"
-  metrics:
-  - name: "acc_norm,none"
-    value: 0.38359
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.6936
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.9044
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8514
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.8042
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.5975
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.7861
+
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.7889
+
+  # - name: leaderboard_bbh
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.5319
+
+  # - name: leaderboard_math_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.1477
+
+  # - name: leaderboard_gpqa
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.3176
+
+  # - name: leaderboard_musr
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.4601
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.5554
