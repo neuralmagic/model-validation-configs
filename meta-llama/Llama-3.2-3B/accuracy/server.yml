@@ -1,5 +1,5 @@
 # https://huggingface.co/meta-llama/Llama-3.2-3B
-model: "meta-llama/Llama-3.3-70B-Instruct"
+model: "meta-llama/Llama-3.2-3B"
 enable-chunked-prefill: true
 max-model-len: 4096
 tensor-parallel-size: 1
