@@ -1,4 +1,5 @@
 # https://huggingface.co/meta-llama/Llama-3.2-3B
+#Note: This chat template comes from the vLLM container image (midstream or rhaiis). It will not work in workflows that do not use the container image for testing.
 model: "meta-llama/Llama-3.2-3B"
 enable-chunked-prefill: true
 max-model-len: 4096
