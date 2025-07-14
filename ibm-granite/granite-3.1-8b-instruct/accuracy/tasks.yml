@@ -1,62 +1,61 @@
-# from gs://nm-vllm-certs/model-validation/lmeval/meta-llama/Llama-3.3-70B-Instruct/cuda/0.8.4.post1/gpu19-h100-octo/llm_eval_0.json
+# from gs://nm-vllm-certs/model-validation/lmeval/ibm-granite/granite-3.1-8b-instruct/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786366303.json
 tasks:
   - name: arc_challenge
     metrics:
       - name: acc_norm,none
-        value: 0.7201
+        value: 0.6663
 
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.9082
+        value: 0.6376
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.8642
+        value: 0.8412
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.8223
+        value: 0.656
 
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.6097
+        value: 0.6048
 
   - name: winogrande
     metrics:
       - name: acc,none
-        value: 0.8397
+        value: 0.7987
 
   - name: leaderboard_ifeval
     metrics:
       - name: inst_level_strict_acc,none
-        value: 0.723
+        value: 0.6666
 
   # - name: leaderboard_bbh
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.6315
+  #       value: 0.5319
 
-  # TODO: need to identify if this is available
-  # - name: leaderboard_math_v_5
+  # - name: leaderboard_math_hard
   #   metrics:
   #     - name: exact_match,none
-  #       value: 0.0017
+  #       value: 0.1477
 
   # - name: leaderboard_gpqa
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.461
+  #       value: 0.3176
 
   # - name: leaderboard_musr
   #   metrics:
   #     - name: acc-norm,none
-  #       value: 0.4435
+  #       value: 0.4601
 
   - name: leaderboard_mmlu_pro
     metrics:
       - name: acc,none
-        value: 0.5495
+        value: 0.3517

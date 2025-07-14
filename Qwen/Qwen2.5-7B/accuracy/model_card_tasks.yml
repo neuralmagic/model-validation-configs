@@ -1,0 +1,31 @@
+# from https://huggingface.co/RedHatAI/Qwen2.5-7B-quantized.w4a16
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.5939
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.7976
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8017
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.7415
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.5638
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.7569

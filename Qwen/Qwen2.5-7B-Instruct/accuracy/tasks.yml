@@ -1,31 +1,56 @@
+# from gs://nm-vllm-certs/model-validation/lmeval/Qwen/Qwen2.5-7B-Instruct/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786279345.json
 tasks:
   - name: arc_challenge
     metrics:
       - name: acc_norm,none
-        value: 0.5939
+        value: 0.6689
 
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.7976
+        value: 0.7634
 
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.8017
+        value: 0.8150
 
   - name: mmlu
     metrics:
       - name: acc,none
-        value: 0.7415
+        value: 0.7430
 
   - name: truthfulqa_mc2
     metrics:
       - name: acc,none
-        value: 0.5637
+        value: 0.6479
 
   - name: winogrande
     metrics:
       - name: acc,none
-        value: 0.7569
+        value: 0.7419
 
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.6906
+
+  - name: leaderboard_gpqa_diamond
+    metrics:
+      - name: acc-norm,none
+        value: 0.3484
+
+  - name: leaderboard_gpqa_extended
+    metrics:
+      - name: acc-norm,none
+        value: 0.3095
+
+  - name: leaderboard_gpqa_main
+    metrics:
+      - name: acc-norm,none
+        value: 0.3191
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.4472

@@ -1,0 +1,31 @@
+# from RedHatAI/Qwen2.5-7B-Instruct-quantized.w4a16
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.634
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.8036
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8152
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.7424
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.6476
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.7466
