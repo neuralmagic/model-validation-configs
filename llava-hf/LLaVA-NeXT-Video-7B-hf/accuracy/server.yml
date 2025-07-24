@@ -1,0 +1,7 @@
+# https://huggingface.co/llava-hf/LLaVA-NeXT-Video-7B-hf
+model: "llava-hf/LLaVA-NeXT-Video-7B-hf"
+enable-chunked-prefill: true
+max-model-len: 5000
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
