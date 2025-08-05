@@ -2,11 +2,11 @@ data:
   prompt_tokens: 1000
   output_tokens: 1000
 rate-type: concurrent
-max-seconds: 300
+max-seconds: 200
 warmup-percent: 0.2
 max-requests: 100
 rate:
-  - 1
   - 5
   - 10
+  - 15
   - 25
