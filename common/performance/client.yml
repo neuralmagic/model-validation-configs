@@ -5,8 +5,4 @@ rate-type: concurrent
 max-seconds: 200
 warmup-percent: 0.2
 max-requests: 100
-rate:
-  - 5
-  - 10
-  - 15
-  - 25
+rate: 5,10,15,25
