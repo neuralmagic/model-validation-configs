@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/facebook/bart-large-cnn
+model: hf
+data: hf

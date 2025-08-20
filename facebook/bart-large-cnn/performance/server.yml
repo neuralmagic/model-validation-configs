@@ -1,0 +1,5 @@
+max-model-len: 1024
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+chat-template: /opt/app-root/template/template_chatglm.jinja
