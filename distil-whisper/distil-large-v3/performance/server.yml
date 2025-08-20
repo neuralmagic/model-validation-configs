@@ -1,4 +1,4 @@
-max-model-len: 448
+max-model-len: 4096
 tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
