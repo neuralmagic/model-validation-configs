@@ -1,0 +1,7 @@
+#Note: This chat template comes from the vLLM container image (midstream or rhaiis). It will not work in workflows that do not use the container image for testing.
+enable-chunked-prefill: true
+max-model-len: 4096
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+chat-template: /opt/app-root/template/tool_chat_template_llama3.2_json.jinja
