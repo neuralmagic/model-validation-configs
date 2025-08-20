@@ -1,12 +1,7 @@
 data:
-  prompt_tokens: 512
-  prompt_tokens_stdev: 128
-  prompt_tokens_min: 1
-  prompt_tokens_max: 1024
-  output_tokens: 256
-  output_tokens_stdev: 64
-  output_tokens_min: 1
-  output_tokens_max: 1024
-rate-type: sweep
-max-seconds: 400
-warmup-percent: 0.2
+  prompt_tokens: 1000
+  output_tokens: 1000
+rate-type: concurrent
+max-seconds: 200
+max-requests: 100
+rate: 5,10,15,25
