@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/DeepSeek-R1-0528-quantized.w4a16
+model: hf
+data: hf
