@@ -1,4 +1,5 @@
 # https://huggingface.co/llava-hf/LLaVA-NeXT-Video-7B-hf
+model_type: "vision"
 model: "llava-hf/LLaVA-NeXT-Video-7B-hf"
 enable-chunked-prefill: true
 max-model-len: 5000

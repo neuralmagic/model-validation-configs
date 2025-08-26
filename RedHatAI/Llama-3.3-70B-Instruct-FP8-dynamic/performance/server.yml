@@ -1,3 +1,4 @@
+model_type: "language"
 enable-chunked-prefill: true
 max-model-len: 8192
 tensor-parallel-size: 4

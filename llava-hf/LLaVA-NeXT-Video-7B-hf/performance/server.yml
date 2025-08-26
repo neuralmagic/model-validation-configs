@@ -1,3 +1,4 @@
+model_type: "vision"
 enable-chunked-prefill: true
 max-model-len: 5000
 tensor-parallel-size: 1

@@ -1,3 +1,4 @@
+model_type: "language"  # Default fallback
 enable-chunked-prefill: true
 max-model-len: 8192
 tensor-parallel-size: 1

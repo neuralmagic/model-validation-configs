@@ -1,3 +1,4 @@
+model_type: "audio"
 max-model-len: 448
 tensor-parallel-size: 1
 trust-remote-code: true

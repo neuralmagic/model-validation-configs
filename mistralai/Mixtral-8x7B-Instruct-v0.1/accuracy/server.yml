@@ -1,4 +1,5 @@
 # https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
+model_type: "language"
 model: "mistralai/Mixtral-8x7B-Instruct-v0.1"
 trust-remote-code: true
 tensor-parallel-size: 8
