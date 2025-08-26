@@ -1,3 +1,3 @@
-# storage configs for https://huggingface.co/RedHatAI/DeepSeek-R1-0528-quantized.w4a16
+# storage configs for https://huggingface.co/RedHatAI/gemma-2-9b-it-FP8
 model: hf
 data: hf
