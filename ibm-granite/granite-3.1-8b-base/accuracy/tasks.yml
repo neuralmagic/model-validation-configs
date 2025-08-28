@@ -1,0 +1,31 @@
+# from gs://nm-vllm-certs/model-validation/lmeval/ibm-granite/granite-3.1-8b-instruct/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786366303.json
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.6468
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.6088
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8352
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.6333
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.5133
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.809
