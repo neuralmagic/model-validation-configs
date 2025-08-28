@@ -1,6 +1,5 @@
 gpu_memory_utilization: 0.8
 max-model-len: 4096
-add_bos_token: false
 enable_chunked_prefill: true
 enforce_eager: true
 trust_remote_code: true
