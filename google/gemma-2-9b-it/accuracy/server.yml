@@ -1,3 +1,2 @@
 gpu_memory_utilization: 0.4
-add_bos_token: true
 max-model-len: 4096

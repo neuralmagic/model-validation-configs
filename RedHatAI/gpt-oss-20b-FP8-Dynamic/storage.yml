@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/gpt-oss-20b-FP8-Dynamic
+model: hf
+data: hf
