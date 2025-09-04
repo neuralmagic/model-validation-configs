@@ -2,4 +2,4 @@ tasks:
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.4708
+        value: 0
