@@ -1,0 +1,3 @@
+trust-remote-code: true
+tensor-parallel-size: 4
+max-model-len: 4096
