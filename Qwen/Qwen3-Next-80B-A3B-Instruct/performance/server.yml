@@ -1,0 +1,7 @@
+enable-chunked-prefill: true
+max-model-len: 9000
+tensor-parallel-size: 4
+trust-remote-code: true
+enable-auto-tool-choice: true
+tool-call-parser: hermes
+uvicorn-log-level: debug
