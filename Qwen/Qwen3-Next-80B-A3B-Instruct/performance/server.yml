@@ -3,6 +3,5 @@ max-model-len: 9000
 tensor-parallel-size: 4
 trust-remote-code: true
 enable-auto-tool-choice: true
-reasoning-parser: deepseek_r1
 tool-call-parser: hermes
 uvicorn-log-level: debug
