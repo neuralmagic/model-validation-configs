@@ -3,3 +3,5 @@ max-model-len: 10000
 tensor-parallel-size: 2
 trust-remote-code: true
 uvicorn-log-level: debug
+tool-call-parser: openai 
+enable-auto-tool-choice: true
