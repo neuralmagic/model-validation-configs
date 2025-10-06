@@ -1,4 +1,3 @@
-# from gs://nm-vllm-certs/model-validation/lmeval/microsoft/phi-4/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786302755.json
 tasks:
   - name: arc_challenge
     metrics:

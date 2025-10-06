@@ -1,4 +1,3 @@
-# from RedHatAI/phi-4-quantized.w8a8
 tasks:
   - name: arc_challenge
     metrics:
