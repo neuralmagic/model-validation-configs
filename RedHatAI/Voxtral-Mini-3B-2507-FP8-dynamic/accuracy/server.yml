@@ -1,0 +1,7 @@
+enable-chunked-prefill: true
+max-model-len: 9000
+tensor-parallel-size: 1
+trust-remote-code: true
+tokenizer_mode: mistral 
+config_format: mistral 
+load_format: mistral
