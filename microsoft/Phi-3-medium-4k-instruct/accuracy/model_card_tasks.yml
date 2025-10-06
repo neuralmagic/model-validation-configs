@@ -1,0 +1,31 @@
+# from RedHatAI/phi-4-quantized.w8a8
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.6442
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.85
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8437
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.803
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.5937
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.8058
