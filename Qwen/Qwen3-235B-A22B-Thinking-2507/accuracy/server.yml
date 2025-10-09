@@ -1,0 +1,5 @@
+trust-remote-code: true
+tensor-parallel-size: 8
+max-model-len: 262144
+enable-reasoning: true
+reasoning-parser: deepseek_r1
