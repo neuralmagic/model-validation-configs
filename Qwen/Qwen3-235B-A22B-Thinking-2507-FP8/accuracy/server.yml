@@ -1,3 +1,4 @@
 tensor-parallel-size: 8
 max-model-len: 262144
 enable-expert-parallel: true
+timeout: 60
