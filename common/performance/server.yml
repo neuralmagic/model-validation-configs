@@ -4,3 +4,4 @@ tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
+kv-cache-dtype: fp8
