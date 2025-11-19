@@ -5,7 +5,7 @@ trust-remote-code: true
 load-format: "auto"
 hf-overrides:
   architectures: ["GemmaForSequenceClassification"]
-  classifier_from_token: ["Yes"]
+  classifier_from_token: ["Yes","No"]
   method: "no_post_processing"
 override-pooler-config:
   pooling_type: "LAST"
