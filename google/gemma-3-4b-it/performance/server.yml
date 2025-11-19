@@ -1,4 +1,3 @@
-model: "google/gemma-3-4b-it"
 runner: "pooling"
 task: "classify"
 convert: "classify"
