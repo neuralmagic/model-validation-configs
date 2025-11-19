@@ -1,5 +1,4 @@
 runner: "pooling"
-task: "classify"
 convert: "classify"
 trust-remote-code: true
 load-format: "auto"
