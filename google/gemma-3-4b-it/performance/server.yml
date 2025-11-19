@@ -1,0 +1,16 @@
+model: "google/gemma-3-4b-it"
+runner: "pooling"
+task: "classify"
+convert: "classify"
+trust-remote-code: true
+load-format: "auto"
+hf-overrides:
+  architectures: ["GemmaForSequenceClassification"]
+  classifier_from_token: ["Yes"]
+  method: "no_post_processing"
+override-pooler-config:
+  pooling_type: "LAST"
+max-model-len: 1024
+enforce-eager: true
+tensor-parallel-size: 1
+disable-log-stats: true

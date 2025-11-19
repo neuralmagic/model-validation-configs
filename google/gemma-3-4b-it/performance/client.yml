@@ -1,0 +1,7 @@
+data:
+  prompt_tokens: 1000
+  output_tokens: 1000
+rate-type: concurrent
+max-seconds: 200
+max-requests: 100
+rate: 5,10,15,25
