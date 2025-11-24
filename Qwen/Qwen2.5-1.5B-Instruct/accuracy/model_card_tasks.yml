@@ -1,0 +1,9 @@
+# from lm-eval-configs in nm-cicd
+tasks:
+  - name: 'gsm8k'
+    rtol: 0.045
+    metrics:
+      - name: 'exact_match,strict-match'
+        value: 0.586
+      - name: 'exact_match,flexible-extract'
+        value: 0.584

@@ -1,0 +1,9 @@
+# from gs://nm-vllm-certs/model-validation/lmeval/Qwen/Qwen2.5-7B-Instruct/cuda/0.8.4.post1/k8s-a100-duo/llm_eval_14786279345.json
+tasks:
+  - name: 'gsm8k'
+    rtol: 0.045
+    metrics:
+      - name: 'exact_match,strict-match'
+        value: 0.586
+      - name: 'exact_match,flexible-extract'
+        value: 0.584
