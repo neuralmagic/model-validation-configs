@@ -1,3 +1,3 @@
-# storage configs for https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
+# storage configs for https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF
 model: hf
 data: hf
