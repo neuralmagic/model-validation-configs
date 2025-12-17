@@ -1,0 +1,3 @@
+# storage configs for https://huggingface.co/RedHatAI/Qwen2-1.5B-Instruct-quantized.w8a8
+model: hf
+data: hf
