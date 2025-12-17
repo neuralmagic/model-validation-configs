@@ -1,3 +1,3 @@
-# storage configs for https://huggingface.co/ibm-granite/granite-3.1-8b-instruct
+# storage configs for https://huggingface.co/ibm-granite/granite-3.3-8b-instruct
 model: hf
 data: hf

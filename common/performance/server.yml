@@ -1,3 +1,5 @@
+max-model-len: 8192
 tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
+no-enable-prefix-caching: true
