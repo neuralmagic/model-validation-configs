@@ -1,3 +1,0 @@
-# storage configs for https://huggingface.co/RedHatAI/gpt-oss-120b-FP8-Dynamic
-model: hf
-data: hf
