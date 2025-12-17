@@ -1,0 +1,60 @@
+tasks:
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.6663
+
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.6543
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.8412
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.656
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.6048
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.7987
+
+  - name: leaderboard_ifeval
+    metrics:
+      - name: inst_level_strict_acc,none
+        value: 0.6666
+
+  # - name: leaderboard_bbh
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.5319
+
+  # - name: leaderboard_math_hard
+  #   metrics:
+  #     - name: exact_match,none
+  #       value: 0.1477
+
+  # - name: leaderboard_gpqa
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.3176
+
+  # - name: leaderboard_musr
+  #   metrics:
+  #     - name: acc-norm,none
+  #       value: 0.4601
+
+  - name: leaderboard_mmlu_pro
+    metrics:
+      - name: acc,none
+        value: 0.3517
