@@ -1,0 +1,8 @@
+# CPU-optimized server configuration for accuracy testing
+# Optimized for faster smoke tests on CPU hardware
+trust-remote-code: true
+tensor-parallel-size: 1
+# Reduced context length for CPU (faster processing)
+max-model-len: 4096
+# CPU prefers block_size that is a multiple of 32 (128 is optimal)
+block-size: 128
