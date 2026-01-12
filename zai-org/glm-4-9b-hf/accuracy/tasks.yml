@@ -1,5 +1,5 @@
 # Migrated from neuralmagic/lm-eval-configs/models/glm-4-9b-hf.yaml
-# Note: Original config referenced zai-org/glm-4-9b-hf, using zia-org/glm-4-9b-hf as specified
+# Note: Original config referenced zai-org/glm-4-9b-hf
 # Note: Metric values are placeholders (0.0) and should be updated with actual baseline values when available
 tasks:
   - name: gsm8k
