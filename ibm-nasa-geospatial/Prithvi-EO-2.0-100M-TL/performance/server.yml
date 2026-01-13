@@ -1,0 +1,8 @@
+tensor-parallel-size: 1
+model-impl: terratorch
+trust-remote-code: true
+uvicorn-log-level: debug
+io-processor-plugin: prithvi_to_tiff
+skip-tokenizer-init: true
+enforce-eager: true
+task: embed
