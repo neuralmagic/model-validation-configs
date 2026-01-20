@@ -3,3 +3,4 @@ tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
+chat-template: /opt/app-root/template/template_chatglm.jinja
