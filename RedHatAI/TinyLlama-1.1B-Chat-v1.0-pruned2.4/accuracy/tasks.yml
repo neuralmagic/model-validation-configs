@@ -1,0 +1,9 @@
+# RedHatAI/TinyLlama-1.1B-Chat-v1.0-pruned2.4 accuracy configuration
+# Note: Metric values are placeholders (0.0) and should be updated with actual baseline values
+tasks:
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.0
+      - name: exact_match,flexible-extract
+        value: 0.0
