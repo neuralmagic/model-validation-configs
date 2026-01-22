@@ -1,3 +1,4 @@
+# Model_card : https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite
 tasks:
   - name: gsm8k
     metrics:
