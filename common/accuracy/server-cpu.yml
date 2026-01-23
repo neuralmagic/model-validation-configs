@@ -1,0 +1,6 @@
+# CPU-specific server configuration for accuracy tests
+# Uses conservative memory settings appropriate for CPU inference
+trust-remote-code: true
+tensor-parallel-size: 1
+max-model-len: 4096
+block-size: 128
