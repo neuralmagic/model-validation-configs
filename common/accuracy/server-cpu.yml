@@ -1,6 +1,6 @@
 # CPU-specific server configuration for accuracy tests
 # Uses conservative memory settings appropriate for CPU inference
+# Note: max-model-len is omitted to let vLLM auto-detect based on model capabilities
 trust-remote-code: true
 tensor-parallel-size: 1
-max-model-len: 4096
 block-size: 128
