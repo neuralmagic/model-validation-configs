@@ -1,0 +1,6 @@
+# Model_card : https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite
+tasks:
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.3760

@@ -1,0 +1,5 @@
+# meta-llama/Llama-3.2-1B-Instruct server configuration
+# This model supports up to 131072 context, but we limit for testing
+trust-remote-code: true
+tensor-parallel-size: 1
+max-model-len: 16384

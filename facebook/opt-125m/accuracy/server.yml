@@ -1,0 +1,5 @@
+# facebook/opt-125m server configuration
+# max_position_embeddings=2048 for this model
+trust-remote-code: true
+tensor-parallel-size: 1
+max-model-len: 2048
