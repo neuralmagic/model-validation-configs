@@ -1,14 +1,6 @@
-# CPU-optimized server configuration for accuracy testing
-# Optimized for faster smoke tests on CPU hardware
+# CPU-specific server configuration for accuracy tests
+# Uses conservative memory settings appropriate for CPU inference
+# Note: max-model-len is omitted to let vLLM auto-detect based on model capabilities
 trust-remote-code: true
 tensor-parallel-size: 1
-# Reduced context length for CPU to minimize memory usage
-max-model-len: 2048
-# Smaller block size to reduce memory fragmentation
-block-size: 32
-# Limit number of sequences to reduce KV cache memory
-max-num-seqs: 32
-# Force eager mode to avoid compilation memory overhead
-enforce-eager: true
-# Disable prefix caching to reduce memory
-enable-prefix-caching: false
+block-size: 128
