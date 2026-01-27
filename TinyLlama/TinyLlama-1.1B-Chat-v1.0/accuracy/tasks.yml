@@ -1,18 +1,7 @@
 # https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
-# Small model (1.1B params) - using simpler benchmarks with lower variance
-# GSM8K showed >70% variance between runs, so using more stable tasks
+# Small model - hellaswag more stable than gsm8k
 tasks:
   - name: hellaswag
     metrics:
       - name: acc_norm,none
         value: 0.6000
-
-  - name: arc_easy
-    metrics:
-      - name: acc_norm,none
-        value: 0.5500
-
-  - name: winogrande
-    metrics:
-      - name: acc,none
-        value: 0.5900

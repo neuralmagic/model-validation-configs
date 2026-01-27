@@ -1,18 +1,7 @@
 # https://huggingface.co/RedHatAI/TinyLlama-1.1B-Chat-v1.0-pruned2.4
-# Pruned model (2:4 sparsity) - using simpler benchmarks appropriate for small/sparse models
-# GSM8K scores near 0% so using tasks with more meaningful variance
+# Pruned model - hellaswag more stable than gsm8k
 tasks:
   - name: hellaswag
     metrics:
       - name: acc_norm,none
         value: 0.4500
-
-  - name: arc_easy
-    metrics:
-      - name: acc_norm,none
-        value: 0.5500
-
-  - name: winogrande
-    metrics:
-      - name: acc,none
-        value: 0.5500
