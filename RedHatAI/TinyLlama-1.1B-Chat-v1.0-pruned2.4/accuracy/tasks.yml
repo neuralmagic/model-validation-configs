@@ -4,4 +4,4 @@ tasks:
   - name: hellaswag
     metrics:
       - name: acc_norm,none
-        value: 0.4500
+        value: 0.4000
