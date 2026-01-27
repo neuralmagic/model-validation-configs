@@ -1,3 +1,5 @@
+# https://huggingface.co/ibm-granite/granite-3.2-2b-instruct
+# Benchmarks based on IBM Granite model card evaluations
 tasks:
   - name: gsm8k
     metrics:
@@ -6,3 +8,17 @@ tasks:
       - name: exact_match,flexible-extract
         value: 0.6459
 
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.5718
+
+  - name: truthfulqa_mc2
+    metrics:
+      - name: acc,none
+        value: 0.5980
+
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.5200

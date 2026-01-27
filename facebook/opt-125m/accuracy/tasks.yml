@@ -1,7 +1,19 @@
+# https://huggingface.co/facebook/opt-125m
+# Very small base model (125M params) - using simpler benchmarks
+# GSM8K scores near 0% so using tasks with more meaningful variance
+# Note: OPT is a base model, not instruction-tuned
 tasks:
-  - name: gsm8k
+  - name: hellaswag
     metrics:
-      - name: exact_match,strict-match
-        value: 0.0053
-      - name: exact_match,flexible-extract
-        value: 0.0182
+      - name: acc_norm,none
+        value: 0.3100
+
+  - name: arc_easy
+    metrics:
+      - name: acc_norm,none
+        value: 0.4350
+
+  - name: winogrande
+    metrics:
+      - name: acc,none
+        value: 0.5000

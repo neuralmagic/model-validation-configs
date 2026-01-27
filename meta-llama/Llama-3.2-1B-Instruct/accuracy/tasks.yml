@@ -1,3 +1,5 @@
+# https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
+# Benchmarks based on Meta's official model card evaluations
 tasks:
   - name: gsm8k
     metrics:
@@ -5,3 +7,18 @@ tasks:
         value: 0.3283
       - name: exact_match,flexible-extract
         value: 0.3283
+
+  - name: mmlu
+    metrics:
+      - name: acc,none
+        value: 0.4930
+
+  - name: arc_challenge
+    metrics:
+      - name: acc_norm,none
+        value: 0.5940
+
+  - name: hellaswag
+    metrics:
+      - name: acc_norm,none
+        value: 0.4120
