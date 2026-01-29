@@ -1,9 +1,7 @@
-# facebook/opt-125m accuracy configuration
-# Note: Metric values are placeholders (0.0) and should be updated with actual baseline values
+# https://huggingface.co/facebook/opt-125m
+# Very small base model - hellaswag more stable than gsm8k
 tasks:
-  - name: gsm8k
+  - name: hellaswag
     metrics:
-      - name: exact_match,strict-match
-        value: 0.0
-      - name: exact_match,flexible-extract
-        value: 0.0
+      - name: acc_norm,none
+        value: 0.3100
