@@ -1,0 +1,10 @@
+# from https://github.com/neuralmagic/nm-cicd/blob/2886478940d67371d257bf9159b7f56af2fecc7f/neuralmagic/lm-eval-configs/models/Mistral-7B-Instruct-v0.3.yaml?plain=1#L2
+# Copied from old lm-eval configs
+# model_name: "mistralai/Mistral-7B-Instruct-v0.3"
+tasks:
+  - name: 'gsm8k'
+    metrics:
+      - name: 'exact_match,strict-match'
+        value: 0.496
+      - name: 'exact_match,flexible-extract'
+        value: 0.498
