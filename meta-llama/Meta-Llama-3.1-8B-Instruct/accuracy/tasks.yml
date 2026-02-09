@@ -1,0 +1,32 @@
+tasks:
+- name: "leaderboard_bbh"
+  metrics:
+  - name: "acc_norm,none"
+    value: 0.501
+- name: "leaderboard_gpqa"
+  metrics:
+  - name: "acc_norm,none"
+    value: 0.268
+- name: "leaderboard_ifeval"
+  metrics:
+  - name: "inst_level_loose_acc,none"
+    value: 0.789
+  - name: "inst_level_strict_acc,none"
+    value: 0.810
+  - name: "prompt_level_loose_acc,none"
+    value: 0.789
+  - name: "prompt_level_strict_acc,none"
+    value: 0.737
+- name: "leaderboard_math_hard"
+  metrics:
+  - name: "exact_match,none"
+    value: 0.157
+- name: "leaderboard_musr"
+  metrics:
+  - name: "acc_norm,none"
+    value: 0.369
+#  currently this runs too long, causing timeout.
+#  - name: "leaderboard_mmlu_pro"
+#    metrics:
+#      - name: "acc,none"
+#        value: 0.374
