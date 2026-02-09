@@ -2,6 +2,6 @@ tasks:
 - name: "gsm8k"
   metrics:
   - name: "exact_match,strict-match"
-    value: 0.496
+    value: 0.909
   - name: "exact_match,flexible-extract"
-    value: 0.498
+    value: 0.909
