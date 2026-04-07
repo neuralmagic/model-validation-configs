@@ -1,0 +1,5 @@
+trust-remote-code: true
+tensor-parallel-size: 2
+max-model-len: 8192
+no-enable-prefix-caching: true
+uvicorn-log-level: debug
