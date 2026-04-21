@@ -1,8 +1,9 @@
+config_format: hf
 enable-chunked-prefill: true
+load_format: hf
 max-model-len: 4096
 tensor-parallel-size: 1
+tokenizer_mode: hf
 trust-remote-code: true
 uvicorn-log-level: debug
-tokenizer_mode: mistral
-config_format: mistral
-load_format: mistral
+chat-template: /opt/app-root/template/tool_chat_template_mistral_parallel.jinja
