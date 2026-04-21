@@ -1,0 +1,4 @@
+enable-chunked-prefill: true
+max-model-len: auto
+tensor-parallel-size: 2
+uvicorn-log-level: debug
