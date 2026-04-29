@@ -1,0 +1,3 @@
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug

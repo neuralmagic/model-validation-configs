@@ -1,0 +1,6 @@
+enable-chunked-prefill: true
+max-model-len: auto
+tensor-parallel-size: 4
+trust-remote-code: true
+uvicorn-log-level: debug
+attention-backend: TRITON_MLA
