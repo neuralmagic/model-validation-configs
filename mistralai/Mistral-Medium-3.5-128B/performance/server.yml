@@ -10,3 +10,4 @@ load_format: mistral
 enable-auto-tool-choice: true
 tool-call-parser: mistral
 reasoning-parser: mistral
+limit-mm-per-prompt: '{"image": 10}'
