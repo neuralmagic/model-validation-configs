@@ -1,9 +1,12 @@
-# from vLLM recipe: vllm-project/recipes models/mistralai/Mistral-Medium-3.5-128B.yaml
-# Benchmarked on MI300X TP=8, FP8 native weights
+# from SGLang cookbook: docs.sglang.io/cookbook/autoregressive/Mistral/Mistral-Medium-3.5
+# Validated on 4x H200 (Hopper), TP=4, FP8 native weights
 tasks:
   - name: gsm8k
     metrics:
-      - name: exact_match,flexible-extract
-        value: 0.929
-      - name: exact_match,strict-match
-        value: 0.876
+      - name: acc
+        value: 0.945
+
+  - name: mmmu
+    metrics:
+      - name: acc
+        value: 0.586
