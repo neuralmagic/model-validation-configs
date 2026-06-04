@@ -1,8 +1,8 @@
-tensor-parallel-size: 8
+tensor-parallel-size: 4
 trust-remote-code: true
-gpu_memory_utilization: 0.8
-max-model-len: 65536
-max_num_batched_tokens: 16384
+gpu_memory_utilization: 0.9
+max-model-len: 16384
+max_num_batched_tokens: 8192
 max_num_seqs: 128
 tokenizer_mode: mistral
 config_format: mistral
