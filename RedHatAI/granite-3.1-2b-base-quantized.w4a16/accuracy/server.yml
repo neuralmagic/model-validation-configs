@@ -1,0 +1,4 @@
+gpu_memory_utilization: 0.8
+max-model-len: 2096
+enable_chunked_prefill: true
+trust_remote_code: true
