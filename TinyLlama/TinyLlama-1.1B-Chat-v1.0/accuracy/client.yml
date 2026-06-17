@@ -1,2 +1,5 @@
 # limit examples as the default 10,042 takes too long to run on CPU
-limit: 1000
+data:
+  prompt_tokens: 1000
+  output_tokens: 1000
+#limit: 1000
