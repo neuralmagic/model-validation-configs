@@ -1,0 +1,6 @@
+# limit examples as the default 10,042 takes too long to run on CPU
+data:
+  prompt_tokens: 1000
+  output_tokens: 1000
+max-requests: 100
+#limit: 1000
