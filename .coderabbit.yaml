@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+language: "en-US"
+inheritance: true
+
+reviews:
+  auto_review:
+    base_branches:
+    - "main"
+
+  path_instructions:
+  - path: "**/*.yml"
+    instructions: |
+      - This project holds YAML config files for consumption by other projects
+      - Focus on YAML security, correctness, and consistent formatting
+
+  high_level_summary: true
+  review_status: true
+  collapse_walkthrough: true
+  sequence_diagrams: false
+  changed_files_summary: false
+  suggested_labels: false
+  suggested_reviewers: false
+  related_issues: false
+  related_prs: false
+  poem: false
+
+  tools:
+    gitleaks:
+      enabled: true
+    languagetool:
+      enabled: true
+    markdownlint:
+      enabled: true
+    yamllint:
+      enabled: true
+
+chat:
+  auto_reply: true
+
+knowledge_base:
+  web_search:
+    enabled: true
+  pull_requests:
+    scope: auto
