@@ -10,4 +10,4 @@ rate: 10,25,50
 random-seed: 42
 warmup: 0.05
 cooldown: 0.05
-backend-kwargs: '{"extras": {"body": {"min_tokens": 1000, "temperature": 0}}}'
+backend-kwargs: '{"extras": {"body": {"temperature": 0}}}'
