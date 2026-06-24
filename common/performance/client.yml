@@ -2,7 +2,7 @@ data:
   prompt_tokens: 1000
   output_tokens: 1000
 rate-type: concurrent
-max-seconds: 600
+max-seconds: 120
 max-requests: 300
-rate: 10,25,50
+rate: 10,25
 random-seed: 42
