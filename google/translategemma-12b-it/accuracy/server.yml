@@ -1,5 +1,3 @@
 # https://huggingface.co/google/translategemma-12b-it
 trust_remote_code: true
-max-model-len: 4096
-enforce_eager: true
 chat-template-content-format: openai

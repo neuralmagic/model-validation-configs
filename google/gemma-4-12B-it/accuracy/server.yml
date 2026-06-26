@@ -1,6 +1,3 @@
 # https://huggingface.co/google/gemma-4-12B-it
-gpu_memory_utilization: 0.8
-max-model-len: 4096
 enable_chunked_prefill: true
-enforce_eager: true
 trust_remote_code: true
