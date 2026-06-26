@@ -1,3 +1,4 @@
 # https://huggingface.co/google/gemma-4-31B-it
+max-model-len: auto
 enable_chunked_prefill: true
 trust_remote_code: true
