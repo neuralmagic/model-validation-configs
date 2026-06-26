@@ -1,0 +1,6 @@
+# https://huggingface.co/google/translategemma-27b-it
+trust_remote_code: true
+gpu_memory_utilization: 0.97
+max-model-len: 4096
+enforce_eager: true
+chat-template-content-format: openai
