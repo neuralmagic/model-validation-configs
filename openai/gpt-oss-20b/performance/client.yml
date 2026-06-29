@@ -1,0 +1,8 @@
+data: sharegpt_regression.json
+rate-type: concurrent
+max-seconds: 500
+max-requests: 300
+rate: 1,25,50,100
+warmup: 0.05
+cooldown: 0.05
+backend-kwargs: '{"extras": {"body": {"temperature": 0}}}'
