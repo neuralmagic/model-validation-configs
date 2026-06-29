@@ -1,0 +1,7 @@
+# MoE model with Mamba architecture - needs reduced max_num_seqs to fit cache blocks
+trust-remote-code: true
+tensor-parallel-size: 2
+max-model-len: 8192
+max-num-seqs: 256
+gpu-memory-utilization: 0.95
+uvicorn-log-level: debug
