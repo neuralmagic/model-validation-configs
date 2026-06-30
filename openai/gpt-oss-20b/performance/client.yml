@@ -5,4 +5,4 @@ max-requests: 300
 rate: 1,25,50,100
 warmup: 0.05
 cooldown: 0.05
-backend-kwargs: '{"extras": {"body": {"temperature": 0, "max_tokens": 1500}}}'
+backend-kwargs: '{"extras": {"body": {"temperature": 0, "max_tokens": 1000}}}'
