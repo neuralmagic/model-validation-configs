@@ -3,6 +3,7 @@
 # path which crashes (CachedMistralCommonBackend missing is_fast).
 # Force Mistral tokenizer mode to use the correct tokenizer backend.
 tokenizer-mode: mistral
-enable-chunked-prefill: true
 trust-remote-code: true
 uvicorn-log-level: debug
+max-model-len: 32768
+config-format: mistral
