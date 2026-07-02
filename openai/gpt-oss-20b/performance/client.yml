@@ -1,4 +1,6 @@
-data: sharegpt_regression.json
+data:
+  prompt_tokens: 1000
+  output_tokens: 1000
 rate-type: concurrent
 max-seconds: 500
 max-requests: 300
