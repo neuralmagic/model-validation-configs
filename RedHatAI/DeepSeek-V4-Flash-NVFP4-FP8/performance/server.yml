@@ -1,0 +1,5 @@
+max-model-len: auto
+tensor-parallel-size: 4
+trust-remote-code: true
+kv-cache-dtype: fp8
+tokenizer-mode: deepseek_v4

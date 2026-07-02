@@ -1,0 +1,9 @@
+max-model-len: auto
+tensor-parallel-size: 4
+trust-remote-code: true
+kv-cache-dtype: fp8
+enable-expert-parallel: true
+tokenizer-mode: deepseek_v4
+tool-call-parser: deepseek_v4
+enable-auto-tool-choice: true
+reasoning-parser: deepseek_v4
