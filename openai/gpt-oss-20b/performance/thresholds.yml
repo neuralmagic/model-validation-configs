@@ -1,0 +1,23 @@
+tokens_per_second:
+  median:
+    threshold: 0.05
+  p95:
+    threshold: 0.10
+
+time_to_first_token:
+  mean:
+    threshold: 0.05
+  p90:
+    threshold: 0.10
+
+request_latency:
+  mean:
+    threshold: 0.05
+  p95:
+    threshold: 0.12
+
+inter_token_latency:
+  median_of_means:
+    threshold: 0.08
+  tail_median:
+    threshold: 0.12
