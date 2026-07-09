@@ -7,8 +7,8 @@ max-requests: 300
 rate: 1,25,50,100
 warmup:
   percent: 0.05
-  mode: prefer_requests
+  mode: requests
 cooldown:
   percent: 0.05
-  mode: prefer_requests
+  mode: requests
 backend-kwargs: '{"extras": {"body": {"temperature": 0, "max_tokens": 1000, "min_tokens": 1000}}}'
