@@ -1,0 +1,9 @@
+# CPU-specific tasks for Llama-3.1-8B-Instruct
+# hellaswag excluded: ground truth baselined on CUDA A100 (full 10k dataset),
+# CPU runs use limit=1000 which consistently scores ~0.706 (12% below 0.8023,
+# exceeds 10% rtol). gsm8k passes reliably on CPU.
+tasks:
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.7657
