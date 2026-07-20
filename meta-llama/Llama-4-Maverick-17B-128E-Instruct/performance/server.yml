@@ -1,5 +1,5 @@
 enable-chunked-prefill: true
-max-model-len: 4096
+max-model-len: 8092
 tensor-parallel-size: 8
 trust-remote-code: true
 uvicorn-log-level: debug
