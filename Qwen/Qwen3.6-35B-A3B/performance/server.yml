@@ -1,0 +1,1 @@
+max-model-len: 4096  # suggested here: https://github.com/neuralmagic/nm-cicd/actions/runs/30111915996
