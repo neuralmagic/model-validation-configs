@@ -1,0 +1,13 @@
+# https://huggingface.co/google/diffusiongemma-26B-A4B-it
+# DiffusionGemma dLLM: the V2 model runner auto-enables for diffusion models
+# (is_diffusion via canvas_length), so VLLM_USE_V2_MODEL_RUNNER is not needed.
+# max-num-seqs MUST be <=4: diffusion state buffers pre-allocate
+# max_seqs x canvas_length x vocab_size and OOM at higher values.
+max-model-len: 8192
+max-num-seqs: 4
+tensor-parallel-size: 2  # cosmetic; profile h100_duo forces TP=2
+trust-remote-code: true
+hf-overrides:
+  diffusion_sampler: entropy_bound
+  diffusion_entropy_bound: 0.1
+uvicorn-log-level: debug
