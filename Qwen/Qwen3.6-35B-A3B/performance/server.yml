@@ -1,0 +1,13 @@
+max-model-len: 8192
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
+# Hybrid Mamba MoE: each decode sequence needs one Mamba cache block. On 80GB
+# cards the 35B weights leave only a few GiB for cache (2.26-4.39 GiB / ~112-217
+# blocks observed run-to-run), so the default max_num_seqs exceeds the available
+# Mamba cache blocks and CUDA graph capture aborts on startup. Cap concurrency
+# well below the observed block floor and give the cache extra headroom.
+# See vLLM: "max_num_seqs (N) exceeds available Mamba cache blocks (M)".
+max-num-seqs: 64
+gpu-memory-utilization: 0.95
