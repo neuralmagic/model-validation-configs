@@ -1,0 +1,19 @@
+# Qwen3-Omni full pipeline (thinker / talker / code2wav) on 3 GPUs.
+#
+# Do NOT set a global tensor-parallel-size here. Omni applies TP per stage;
+# global TP>1 with the default 1-GPU-per-stage map fails with:
+#   local_world_size (N) must be <= number of visible devices (1)
+#
+# Per-stage layout lives in stage-overrides.json (pass as --stage-overrides):
+#   stage 0 (thinker): TP=2 on devices 0,1
+#   stage 1 (talker):  TP=1 on device 2
+#   stage 2 (code2wav): TP=1 on device 2
+#
+# Registry / deploy must request gpu_count=3 (not a100_duo TP=2).
+# Serve example:
+#   vllm serve Qwen/Qwen3-Omni-30B-A3B-Instruct --omni \
+#     --stage-overrides "$(cat stage-overrides.json)"
+max-model-len: 8192
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true

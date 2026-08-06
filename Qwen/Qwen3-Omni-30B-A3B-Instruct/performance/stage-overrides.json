@@ -1,0 +1,5 @@
+{
+  "0": {"tensor_parallel_size": 2, "devices": "0,1"},
+  "1": {"devices": "2"},
+  "2": {"devices": "2"}
+}
