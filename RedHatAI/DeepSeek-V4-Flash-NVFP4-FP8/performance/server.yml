@@ -1,0 +1,12 @@
+max-model-len: 8192
+# tensor-parallel-size is supplied by the harness from the model registry
+# profile (h100_quad -> 4); omit it here so the config does not fight (and warn
+# about overriding) the command-line --tensor-parallel-size.
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
+# DeepSeek-V4 fp8_ds_mla attention layout only supports an fp8 KV cache; with the
+# default kv-cache-dtype=auto the engine aborts on startup with:
+#   AssertionError: DeepseekV4 fp8_ds_mla layout only supports fp8 kv-cache, got auto
+# Pin the KV cache dtype to fp8 to match the ds_mla layout requirement.
+kv-cache-dtype: fp8

@@ -1,0 +1,4 @@
+# https://huggingface.co/google/translategemma-27b-it
+max-model-len: auto
+trust_remote_code: true
+chat-template-content-format: openai

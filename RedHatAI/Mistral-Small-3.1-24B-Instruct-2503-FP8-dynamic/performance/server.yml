@@ -1,0 +1,9 @@
+# https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic
+# FP8 repo lacks consolidated.safetensors, so vLLM defaults to HF tokenizer
+# path which crashes (CachedMistralCommonBackend missing is_fast).
+# Force Mistral tokenizer mode to use the correct tokenizer backend.
+tokenizer-mode: mistral
+trust-remote-code: true
+uvicorn-log-level: debug
+max-model-len: 32768
+config-format: mistral

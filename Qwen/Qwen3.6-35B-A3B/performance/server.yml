@@ -7,3 +7,6 @@ reasoning-parser: deepseek_r1
 tool-call-parser: qwen3_coder
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
+# Hybrid Mamba MoE: each decode sequence needs one Mamba cache block.
+max-num-seqs: 64
+gpu-memory-utilization: 0.95
