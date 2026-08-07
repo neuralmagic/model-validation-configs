@@ -7,3 +7,6 @@ trust-remote-code: true
 uvicorn-log-level: debug
 max-model-len: 32768
 config-format: mistral
+# INF-9704 isolation: rule out cudagraph/torch.compile as the source of NaN on
+# the FP8 vision path. Remove after triage.
+enforce-eager: true
