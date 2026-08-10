@@ -3,12 +3,12 @@ trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
 # Qwen3-VL-235B-A22B is a block-FP8 MoE (moe_intermediate_size=1536). Under the
-# h100_octo profile the harness runs tensor-parallel-size=8, which shards the
-# gate/up output partition to 1536/8 = 192 — not divisible by the FP8 weight
-# block size (block_n=128) — so the engine aborts at startup:
-#   ValueError: The output_size of gate's and up's weight = 192 is not divisible
-#   by weight quantization block_n = 128.
-# Enable expert parallelism so experts (not the intermediate dim) are sharded
-# across ranks; 1536 % 128 == 0 then holds. Confirmed resolved-by-config in vLLM
-# issues #30934, #31262, #17569 (not a code bug).
+# h100_quad profile the harness runs tensor-parallel-size=4, so the gate/up
+# output partition shards to 1536/4 = 384, which IS divisible by the FP8 weight
+# block size (block_n=128) — startup is fine. (The previous h100_octo/TP=8
+# profile sharded to 1536/8 = 192, not divisible by 128, which aborted startup
+# with "output_size ... = 192 is not divisible by weight quantization block_n =
+# 128" unless expert parallelism was enabled; see vLLM issues #30934, #31262,
+# #17569.) Expert parallelism is retained as a MoE optimization; it is safe
+# under TP=4 as well.
 enable-expert-parallel: true
