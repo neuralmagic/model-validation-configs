@@ -3,4 +3,4 @@ tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
-attention-backend: ROCM_AITER_FA
+enforce-eager: true
