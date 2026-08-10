@@ -1,0 +1,12 @@
+# https://huggingface.co/fdtn-ai/Foundation-Sec-8B
+# Base model derived from Llama-3.1-8B (LlamaForCausalLM). Its tokenizer ships
+# no chat_template, so /v1/chat/completions fails with ChatTemplateResolutionError
+# ("default chat template is no longer allowed") unless one is supplied.
+# Provide the Llama 3.1 template from the vLLM container image.
+# Note: this chat-template path resolves inside the vLLM container image only.
+max-model-len: 8192
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
+chat-template: /opt/app-root/template/tool_chat_template_llama3.1_json.jinja
