@@ -6,4 +6,10 @@ tokenizer-mode: mistral
 trust-remote-code: true
 uvicorn-log-level: debug
 max-model-len: 32768
-config-format: mistral
+# Load via the HF path (mistral3.py / Mistral3ForConditionalGeneration), NOT the
+# mistral/Pixtral path: config-format=mistral routes the FP8 checkpoint into
+# pixtral.py, which NaNs on the image->LM merge (text passes, vision fails with
+# "Out of range float values are not JSON compliant: nan"). Upstream guidance is
+# that FP8 Mistral3 must load in HF format; the required HF-path fixes (vllm
+# #32673/#39293/#39916) are already in v0.24.0. See vllm PR #32859 discussion.
+config-format: hf
