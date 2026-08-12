@@ -1,15 +1,19 @@
 # https://huggingface.co/RedHatAI/Mistral-Small-3.1-24B-Instruct-2503-FP8-dynamic
-# FP8 repo lacks consolidated.safetensors, so vLLM defaults to HF tokenizer
-# path which crashes (CachedMistralCommonBackend missing is_fast).
-# Force Mistral tokenizer mode to use the correct tokenizer backend.
-tokenizer-mode: mistral
+# Load fully via the HF path: config-format=hf + HF tokenizer (tokenizer-mode
+# auto), so the tokenizer and the HF PixtralProcessor agree on the [IMG] token.
+#
+# Why NOT config-format=mistral: it routes the FP8 checkpoint into pixtral.py,
+# which NaNs on the image->LM merge (text passes, vision fails with "Out of range
+# float values are not JSON compliant: nan"). Upstream guidance is that FP8
+# Mistral3 must load in HF format; HF-path fixes #32673/#39293/#39916 are in
+# v0.24.0. See vllm PR #32859 discussion.
+#
+# Why NOT tokenizer-mode=mistral here: mixing the Mistral tokenizer with the HF
+# processor makes the dummy-[IMG] token counts disagree -> startup crash
+# ("Mismatch in image token count ... Failed to apply PixtralProcessor").
+# The fix_mistral_regex tokenizer warning on the HF tokenizer is cosmetic.
+tokenizer-mode: auto
 trust-remote-code: true
 uvicorn-log-level: debug
 max-model-len: 32768
-# Load via the HF path (mistral3.py / Mistral3ForConditionalGeneration), NOT the
-# mistral/Pixtral path: config-format=mistral routes the FP8 checkpoint into
-# pixtral.py, which NaNs on the image->LM merge (text passes, vision fails with
-# "Out of range float values are not JSON compliant: nan"). Upstream guidance is
-# that FP8 Mistral3 must load in HF format; the required HF-path fixes (vllm
-# #32673/#39293/#39916) are already in v0.24.0. See vllm PR #32859 discussion.
 config-format: hf
