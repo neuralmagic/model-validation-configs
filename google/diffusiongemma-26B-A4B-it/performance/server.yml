@@ -1,9 +1,12 @@
 # https://huggingface.co/google/diffusiongemma-26B-A4B-it
 # DiffusionGemma dLLM: the V2 model runner auto-enables for diffusion models
 # (is_diffusion via canvas_length), so VLLM_USE_V2_MODEL_RUNNER is not needed.
-# EXPERIMENTAL: max-num-seqs and trust-remote-code intentionally omitted here
-# to validate whether they're actually required (see INFERENG-8821 doc review).
+# EXPERIMENTAL: trust-remote-code intentionally omitted here to validate
+# whether it's actually required (see INFERENG-8821 doc review). Keeping
+# max-num-seqs: 4 this round after the prior run (without both) failed to
+# come up within the ProgressDeadline.
 max-model-len: 8192
+max-num-seqs: 4
 tensor-parallel-size: 2  # cosmetic; profile h100_duo forces TP=2
 hf-overrides:
   diffusion_sampler: entropy_bound
