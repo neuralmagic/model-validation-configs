@@ -45,9 +45,11 @@ noise on every PR:
     Anything less certain is shown separately, clearly labeled as unverified.
   * Network failures, rate limits, and "no upstream recipe for this model"
     are all expected, common outcomes -- never treated as errors.
-  * Always exits 0. This check is advisory-only; --fail-on exists for a
-    future opt-in once it has proven signal quality (mirrors nm-cicd's own
-    validate_registry_capabilities.py, which defaults to non-blocking too).
+  * Exits 0 by default (`--fail-on none`), for standalone/local use. The
+    repo's own workflow opts into `--fail-on correctness`, so a high-confidence
+    conflict (`reasoning-parser`/`tool-call-parser`/`tokenizer-mode`/
+    `config-format`/`load-format`) fails the check and blocks merge; everything
+    else (missing/extra, advisory notes, fuzzy matches) never fails the build.
 
 Usage:
   uv run check_recipes.py --base <sha> --head <sha> --summary-out summary.md

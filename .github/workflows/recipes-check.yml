@@ -45,7 +45,8 @@ jobs:
           uv run .github/scripts/check_recipes.py \
             --base "${{ github.event_name == 'workflow_dispatch' && inputs.base || github.event.pull_request.base.sha }}" \
             --head "${{ (github.event_name == 'workflow_dispatch' && inputs.head) || github.sha }}" \
-            --summary-out summary.md
+            --summary-out summary.md \
+            --fail-on correctness
 
       - name: write job summary
         if: always()
