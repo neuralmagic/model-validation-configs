@@ -3,8 +3,8 @@ max-model-len: 8192
 tensor-parallel-size: 1
 trust-remote-code: true
 enable-auto-tool-choice: true
-reasoning-parser: qwen3
-tool-call-parser: qwen3_coder
+reasoning-parser: deepseek_r1
+tool-call-parser: hermes
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
 # Hybrid Mamba MoE: each decode sequence needs one Mamba cache block.
