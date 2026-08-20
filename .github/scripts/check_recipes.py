@@ -573,7 +573,7 @@ def review_model(hf_id: str, model_dir: Path, configs_root: Path, index: list[di
 
 def render_summary(results: list[dict[str, Any]], common_only: bool) -> str:
     lines: list[str] = []
-    lines.append("## vllm-project/recipes check (advisory only)")
+    lines.append("## vllm-project/recipes check")
     lines.append("")
 
     if common_only:
@@ -643,13 +643,14 @@ def render_summary(results: list[dict[str, Any]], common_only: bool) -> str:
             advisory_lines.append(f"- {header}\n" + "\n".join(model_advisory + env_notes))
 
     if top_findings:
-        lines.append("### Worth a look (high-confidence conflicting values)")
+        lines.append("### Worth a look (high-confidence conflicting values) -- blocks merge")
         lines.append("")
         lines.append(
             "Both our config and the upstream recipe explicitly set these, to different "
             "values -- this is the strongest signal this tool can produce (it's how we "
             "caught a real `reasoning-parser` bug during the manual review this check is "
-            "based on; a hardcoded wrong `tool-call-parser` is the same class of bug)."
+            "based on; a hardcoded wrong `tool-call-parser` is the same class of bug). "
+            "Fix the value (or if it's genuinely intentional, say why in the PR)."
         )
         lines.append("")
         lines.extend(top_findings)
