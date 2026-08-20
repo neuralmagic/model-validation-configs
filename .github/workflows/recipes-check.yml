@@ -7,13 +7,24 @@ on:
       - '**/performance/server*.yml'
       - 'common/accuracy/server*.yml'
       - 'common/performance/server*.yml'
+  # Manual escape hatch for testing this workflow itself without needing an
+  # actual PR that touches a server.yml (e.g. right after adding/changing
+  # this workflow). Skips the PR-comment step since there's no PR context.
+  workflow_dispatch:
+    inputs:
+      base:
+        description: "base git ref/sha to diff against"
+        required: true
+      head:
+        description: "head git ref/sha (defaults to the dispatched ref)"
+        required: false
 
 permissions:
   contents: read
   pull-requests: write
 
 concurrency:
-  group: recipes-check-${{ github.event.pull_request.number }}
+  group: recipes-check-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -32,8 +43,8 @@ jobs:
       - name: check changed configs against vllm-project/recipes
         run: |
           uv run .github/scripts/check_recipes.py \
-            --base "${{ github.event.pull_request.base.sha }}" \
-            --head "${{ github.sha }}" \
+            --base "${{ github.event_name == 'workflow_dispatch' && inputs.base || github.event.pull_request.base.sha }}" \
+            --head "${{ (github.event_name == 'workflow_dispatch' && inputs.head) || github.sha }}" \
             --summary-out summary.md
 
       - name: write job summary
@@ -41,7 +52,7 @@ jobs:
         run: cat summary.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: post or update PR comment
-        if: always()
+        if: always() && github.event_name == 'pull_request'
         run: |
           gh pr comment "${{ github.event.pull_request.number }}" \
             --edit-last --create-if-none --body-file summary.md
