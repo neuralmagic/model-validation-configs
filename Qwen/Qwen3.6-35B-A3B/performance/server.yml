@@ -10,3 +10,4 @@ no-enable-prefix-caching: true
 # Hybrid Mamba MoE: each decode sequence needs one Mamba cache block.
 max-num-seqs: 64
 gpu-memory-utilization: 0.95
+# recipes-check demo evidence marker (PR #109) -- values above are correct
