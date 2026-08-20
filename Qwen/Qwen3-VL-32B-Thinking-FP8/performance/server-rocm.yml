@@ -3,5 +3,5 @@ tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
-enforce-eager: true
-reasoning-parser: deepseek_r1
+attention-backend: ROCM_AITER_FA
+reasoning-parser: qwen3
