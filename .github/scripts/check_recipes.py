@@ -21,18 +21,18 @@ noise on every PR:
     "missing" or "extra" -- the OCP test harness in nm-cicd
     (ocp_model_deployment/fixtures.py) independently injects these at deploy
     time via toolparser/rules.py, and this repo has no visibility into that
-    harness to know whether a given model's rule exists. Only an explicit
-    *conflict* (both sides set it, to different values) is surfaced, and only
-    as an advisory note, not a top-priority finding.
+    harness to know whether a given model's rule exists.
   * `kv-cache-dtype` is always a performance-tier note, never a correctness
     finding -- vLLM's own FP8-KV-cache docs frame the default (`auto`, ~bf16)
     as the higher-fidelity choice for standard attention backends; it's only
     correctness-critical for kernels with no bf16 KV-cache path at all (e.g.
     DeepSeek's fp8_ds_mla), which is too narrow to special-case generically.
-  * A `reasoning-parser` conflict (both sides set, values disagree) is the
-    highest-confidence signal available -- nothing downstream overrides it --
-    and is surfaced most prominently, alongside tokenizer-mode/config-format/
-    load-format conflicts.
+  * A `reasoning-parser` or `tool-call-parser` conflict (both sides set,
+    values disagree) is the highest-confidence signal available -- nothing
+    downstream overrides an explicit, hardcoded wrong value in either -- and
+    is surfaced most prominently, alongside tokenizer-mode/config-format/
+    load-format conflicts. `enable-auto-tool-choice` conflicts (a boolean,
+    not a parser selection) stay advisory-only.
   * "Expected divergence" flags (max-model-len, tensor-parallel-size,
     uvicorn-log-level, no-enable-prefix-caching, chat-template,
     trust-remote-code, model) are filtered out entirely -- not just
@@ -438,15 +438,25 @@ EXPECTED_DIVERGENCE_FLAGS = {
 
 # High-confidence correctness signal: shown ONLY when both sides set it and
 # disagree (a "diff"), never for merely-missing/extra. See module docstring.
+# `tool-call-parser` is included here *and* in DIFF_ONLY_ADVISORY_FLAGS below:
+# a hardcoded wrong parser string is the same class of bug as a wrong
+# `reasoning-parser` (both mis-select an output-parsing implementation for
+# the model), so a "diff" gets top billing -- but "missing"/"extra" is still
+# suppressed for it via DIFF_ONLY_ADVISORY_FLAGS, since the harness may
+# legitimately inject it.
 TOP_CORRECTNESS_FLAGS = {
     "reasoning-parser",
+    "tool-call-parser",
     "tokenizer-mode",
     "config-format",
     "load-format",
 }
 
-# Compensated elsewhere (nm-cicd's OCP harness); only a value conflict is
-# worth a passing mention, never "missing"/"extra".
+# Compensated elsewhere (nm-cicd's OCP harness): "missing"/"extra" is never
+# actionable for these, only an explicit value conflict. `tool-call-parser`
+# is also in TOP_CORRECTNESS_FLAGS, so its conflicts render top-tier;
+# `enable-auto-tool-choice` (a boolean toggle, not a parser selection) stays
+# advisory-only.
 DIFF_ONLY_ADVISORY_FLAGS = {
     "tool-call-parser",
     "enable-auto-tool-choice",
@@ -628,7 +638,7 @@ def render_summary(results: list[dict[str, Any]], common_only: bool) -> str:
             "Both our config and the upstream recipe explicitly set these, to different "
             "values -- this is the strongest signal this tool can produce (it's how we "
             "caught a real `reasoning-parser` bug during the manual review this check is "
-            "based on)."
+            "based on; a hardcoded wrong `tool-call-parser` is the same class of bug)."
         )
         lines.append("")
         lines.extend(top_findings)
