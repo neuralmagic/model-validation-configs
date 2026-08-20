@@ -1,0 +1,49 @@
+name: recipes-check
+
+on:
+  pull_request:
+    paths:
+      - '**/accuracy/server*.yml'
+      - '**/performance/server*.yml'
+      - 'common/accuracy/server*.yml'
+      - 'common/performance/server*.yml'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: recipes-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check-recipes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: setup python
+        run: uv python install 3.12
+
+      - name: check changed configs against vllm-project/recipes
+        run: |
+          uv run .github/scripts/check_recipes.py \
+            --base "${{ github.event.pull_request.base.sha }}" \
+            --head "${{ github.sha }}" \
+            --summary-out summary.md
+
+      - name: write job summary
+        if: always()
+        run: cat summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: post or update PR comment
+        if: always()
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" \
+            --edit-last --create-if-none --body-file summary.md
+        env:
+          GH_TOKEN: ${{ github.token }}
