@@ -3,11 +3,12 @@ max-model-len: 8192
 tensor-parallel-size: 1
 trust-remote-code: true
 enable-auto-tool-choice: true
-reasoning-parser: deepseek_r1
+reasoning-parser: qwen3
 tool-call-parser: qwen3_coder
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
 # Hybrid Mamba MoE: each decode sequence needs one Mamba cache block.
 max-num-seqs: 64
 gpu-memory-utilization: 0.95
-# recipes-check demo evidence marker (PR #109) -- values above are correct
+# recipes-check demo evidence marker (PR #109) -- final state: values correct,
+# --fail-on correctness tested to both fail (bug reintroduced) and pass (this)
