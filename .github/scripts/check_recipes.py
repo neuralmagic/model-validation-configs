@@ -509,6 +509,14 @@ def review_model(hf_id: str, model_dir: Path, configs_root: Path, index: list[di
     result["recipe_hf_id"] = recipe_hf_id
     result["confidence"] = confidence
 
+    # Link to the actual recipe page as evidence, not just a bare hf_id --
+    # for derived variants (e.g. our FP8 model matched to an upstream FP8
+    # entry) the index's "url" may point at a shared base-model page rather
+    # than a page for recipe_hf_id itself, so look it up rather than assume.
+    index_entry = next((m for m in index if m.get("hf_id") == recipe_hf_id), None)
+    if index_entry and index_entry.get("url"):
+        result["recipe_url"] = client._url(index_entry["url"])
+
     detail = client.get_json(f"/{recipe_hf_id}.json")
     if detail is None:
         result["status"] = "unreachable" if client.unreachable else "no_recipe"
@@ -598,7 +606,8 @@ def render_summary(results: list[dict[str, Any]], common_only: bool) -> str:
 
         confidence = r["confidence"]
         recipe_id = r["recipe_hf_id"]
-        header = f"`{model}` -> `{recipe_id}` (match: {confidence})"
+        recipe_ref = f"[`{recipe_id}`]({r['recipe_url']})" if r.get("recipe_url") else f"`{recipe_id}`"
+        header = f"`{model}` -> {recipe_ref} (match: {confidence})"
 
         if confidence not in HIGH_CONFIDENCE:
             low_confidence_lines.append(
