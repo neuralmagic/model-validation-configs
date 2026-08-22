@@ -1,0 +1,7 @@
+tensor-parallel-size: 8
+trust-remote-code: true
+max-model-len: 32768
+kv-cache-dtype: fp8
+enable-prefix-caching: true
+max-num-seqs: 8
+max-num-batched-tokens: 8192
