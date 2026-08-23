@@ -6,3 +6,5 @@ max-num-batched-tokens: 8192
 max-cudagraph-capture-size: 8
 kv-cache-dtype: fp8
 enable-prefix-caching: true
+no-enable-flashinfer-autotune: true
+attention-config: '{"mla_prefill_backend":"FLASHINFER","use_prefill_query_quantization":true}'
