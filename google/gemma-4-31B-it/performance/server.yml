@@ -8,5 +8,5 @@ trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
 # the default value of .90/.92 goes OOM on A100/80GB
-gpu-memory-utilization: 0.97
+gpu-memory-utilization: 0.90
 enforce-eager: true
