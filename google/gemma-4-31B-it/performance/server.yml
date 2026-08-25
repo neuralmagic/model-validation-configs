@@ -1,11 +1,12 @@
 # NOTE: max-num-batched-tokens must be >= max-tokens-per-mm-item (2496)
 # because vLLM forces --disable-chunked-mm-input for Gemma4 models
 # due to multimodal-bidirectional attention.
-max-model-len: 8192
-max-num-batched-tokens: 32768
+max-model-len: 4096
+max-num-batched-tokens: 4096
 tensor-parallel-size: 1
 trust-remote-code: true
 uvicorn-log-level: debug
 no-enable-prefix-caching: true
 # the default value of .90/.92 goes OOM on A100/80GB
 gpu-memory-utilization: 0.97
+enforce-eager: true
