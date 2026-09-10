@@ -1,6 +1,12 @@
 enable-chunked-prefill: true
-max-model-len: 4096
+max-model-len: 1024
 tensor-parallel-size: 1
+# GB10 has no dedicated VRAM: ~120 GiB unified LPDDR5X shared with the host,
+# of which only ~70 GiB is free at startup. gpu-memory-utilization is only the
+# startup gate (request_memory checks gmu * total_memory <= free_memory);
+# kv-cache-memory-bytes bypasses profiling and sets the real KV allocation.
+gpu-memory-utilization: 0.05
+kv-cache-memory-bytes: 1073741824
 trust-remote-code: true
 enable-auto-tool-choice: true
 reasoning-parser: deepseek_r1
