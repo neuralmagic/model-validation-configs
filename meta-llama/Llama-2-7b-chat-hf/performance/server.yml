@@ -1,0 +1,8 @@
+# Llama 2 has max_position_embeddings=4096. The common/performance default of
+# 8192 makes vLLM abort at startup: "User-specified max_model_len (8192) is
+# greater than the derived max_model_len (max_position_embeddings=4096.0 ...)".
+max-model-len: 4096
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
