@@ -1,0 +1,5 @@
+# Same speculative decoding as google/gemma-4-26B-A4B-it (quantized serving checkpoint)
+spec_config:
+  speculative-config:
+    model: google/gemma-4-26B-A4B-it-assistant
+    num_speculative_tokens: 4
