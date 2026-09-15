@@ -1,4 +1,6 @@
-max-model-len: auto
+# auto resolves to 1M context which OOMs on TP=4 H100s during warmup;
+# 128k is sufficient for testing and leaves headroom for CUDA graphs
+max-model-len: 131072
 tensor-parallel-size: 8
 trust-remote-code: true
 kv-cache-dtype: fp8
@@ -7,4 +9,5 @@ tokenizer-mode: deepseek_v4
 tool-call-parser: deepseek_v4
 enable-auto-tool-choice: true
 reasoning-parser: deepseek_v4
+reasoning-config: '{"reasoning_parser":"deepseek_v4","reasoning_start_str":"","reasoning_end_str":""}'
 block-size: 256
