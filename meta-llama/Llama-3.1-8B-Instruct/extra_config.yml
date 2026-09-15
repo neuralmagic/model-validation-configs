@@ -1,0 +1,6 @@
+# From vllm-project/recipes models/meta-llama/Llama-3.1-8B-Instruct.yaml (EAGLE3)
+spec_config:
+  speculative-config:
+    model: RedHatAI/Llama-3.1-8B-Instruct-speculator.eagle3
+    method: eagle3
+    num_speculative_tokens: 3
