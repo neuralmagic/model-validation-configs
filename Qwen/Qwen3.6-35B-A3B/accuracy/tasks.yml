@@ -1,6 +1,0 @@
-# PLACEHOLDER - value pending measurement, do not merge.
-tasks:
-  - name: gsm8k
-    metrics:
-      - name: exact_match,strict-match
-        value: 0.0
