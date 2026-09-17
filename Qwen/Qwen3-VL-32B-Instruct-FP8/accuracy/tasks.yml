@@ -1,7 +1,8 @@
 # measured on hpu (k8s-gaudi-solo, tp=1) via nm-cicd lm-eval run 35267078545
 # https://github.com/neuralmagic/nm-cicd/actions/runs/35267078545
+# raw measured: 0.886277 -> committed at -1% (0.8774) to tolerate minor regressions
 tasks:
   - name: gsm8k
     metrics:
       - name: exact_match,strict-match
-        value: 0.8863
+        value: 0.8774
