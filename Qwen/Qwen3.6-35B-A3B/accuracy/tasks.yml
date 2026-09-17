@@ -1,0 +1,7 @@
+# TEMPORARY measurement-only placeholder. This branch exists solely to let
+# lm-eval emit a gsm8k number for this model; do not merge.
+tasks:
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.0
