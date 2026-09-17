@@ -1,5 +1,10 @@
 # accuracy configs for https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 tasks:
+# PLACEHOLDER - value pending measurement, do not merge.
+- name: "gsm8k"
+  metrics:
+  - name: "exact_match,strict-match"
+    value: 0.0
 - name: "leaderboard_bbh"
   metrics:
   - name: "acc_norm,none"
