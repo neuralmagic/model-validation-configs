@@ -1,0 +1,7 @@
+# Baseline from https://github.com/neuralmagic/nm-cicd/actions/runs/32766175775
+# A100: 0.292646; H100: 0.282032
+tasks:
+  - name: gsm8k
+    metrics:
+      - name: exact_match,strict-match
+        value: 0.2820
