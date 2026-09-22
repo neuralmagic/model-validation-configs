@@ -1,0 +1,5 @@
+# From vllm-project/recipes models/Google/gemma-4-31B-it.yaml
+spec_config:
+  speculative-config:
+    model: google/gemma-4-31B-it-assistant
+    num_speculative_tokens: 4

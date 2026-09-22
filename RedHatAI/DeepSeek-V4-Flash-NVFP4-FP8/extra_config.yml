@@ -1,0 +1,5 @@
+# Same speculative decoding as deepseek-ai/DeepSeek-V4-Flash (quantized serving checkpoint)
+spec_config:
+  speculative-config:
+    method: mtp
+    num_speculative_tokens: 2

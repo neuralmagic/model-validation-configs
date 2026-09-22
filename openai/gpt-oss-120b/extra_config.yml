@@ -1,0 +1,7 @@
+# From vllm-project/recipes models/openai/gpt-oss-120b.yaml (EAGLE3)
+spec_config:
+  speculative-config:
+    model: nvidia/gpt-oss-120b-Eagle3-v3
+    method: eagle3
+    num_speculative_tokens: 7
+    draft_tensor_parallel_size: 1

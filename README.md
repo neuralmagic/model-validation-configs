@@ -12,3 +12,24 @@ The `accuracy` folder contains YAML configs needed for the model to be validated
 The `performance` folder contains YAML configs needed for the model to be validated through the [guidellm](https://github.com/neuralmagic/guidellm). There are 2 config files for each model:
 * server.yml: contains settings to start a vllm server with the model
 * client.yml: contains settings for the guidellm for the model
+
+### `extra_config.yml` (optional overlays)
+
+Optional per-model overlays live at `<org>/<model>/extra_config.yml`. A shared
+default is in `common/extra_config.yml`.
+
+Sections are keyed by purpose so new overlay types can be added later:
+
+```yaml
+spec_config:
+  speculative-config:
+    method: ngram
+    num_speculative_tokens: 3
+```
+
+Resolution order: model-specific `extra_config.yml`, then `common/extra_config.yml`.
+Values under `spec_config.speculative-config` map to vLLM's `--speculative-config`
+(JSON object). Use nested YAML mappings (not escaped JSON strings).
+
+Model-specific overrides are sourced from [vLLM Recipes](https://github.com/vllm-project/recipes/tree/main/models)
+when available; otherwise the common n-gram default applies.

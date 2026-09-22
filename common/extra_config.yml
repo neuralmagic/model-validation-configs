@@ -1,0 +1,10 @@
+# Optional server overlays merged by nm-cicd for benchmark and BFCL runs only.
+# Keys are workload-specific sections; missing sections are ignored.
+#
+# Default speculative decoding: n-gram with 3 draft tokens.
+# Model-specific overrides live in <org>/<model>/extra_config.yml.
+
+spec_config:
+  speculative-config:
+    method: ngram
+    num_speculative_tokens: 3
