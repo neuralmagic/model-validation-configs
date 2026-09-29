@@ -1,5 +1,12 @@
-# accuracy configs for https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+# accuracy configs for https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct
 tasks:
+# Measured 0.921911 on 8x Gaudi3 (tp=8, bf16, full 1319 samples),
+# vllm 0.26.1.dev13+rhaiv.8 / vllm-gaudi v0.26.0:
+# https://github.com/neuralmagic/nm-cicd/actions/runs/36618146707
+- name: "gsm8k"
+  metrics:
+  - name: "exact_match,strict-match"
+    value: 0.92
 - name: "leaderboard_bbh"
   metrics:
   - name: "acc_norm,none"
