@@ -1,19 +1,5 @@
 tasks:
-# Re-baselined 0.820 -> 0.73 against HPU.
-#
-# The old 0.820 was never reproducible here: 8x Gaudi3 measures 0.731615, and
-# identically to six decimals across two runs on different branches two days
-# apart (seed=0), so this is a stable offset and not run-to-run noise:
-#   https://github.com/neuralmagic/nm-cicd/actions/runs/36321715045  (2026-09-27)
-#   https://github.com/neuralmagic/nm-cicd/actions/runs/36605600069  (2026-09-29)
-# rtol 0.1 put the pass floor at 0.738, so every HPU run failed by ~0.9%.
-#
-# 0.820 also looks wrong on its own terms: the unquantized parent
-# meta-llama/Llama-3.1-8B-Instruct is baselined at 0.7657 (from CUDA, per that
-# file's header), and an FP8-dynamic quantization should not beat its own bf16
-# parent by 5.4 points. These tasks.yml files carry a single accelerator-agnostic
-# value -- load_lm_eval_tasks() never reads validation_config.accelerator -- so
-# one number has to cover both. The HPU measurement is the one we can reproduce.
+# re-baselined 0.820 -> 0.73: HPU measures 0.731615 reproducibly, never 0.820
 - name: "gsm8k"
   metrics:
   - name: "exact_match,strict-match"
