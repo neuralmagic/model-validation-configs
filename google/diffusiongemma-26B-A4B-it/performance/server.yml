@@ -4,6 +4,7 @@
 # max-num-seqs MUST be <=4: diffusion state buffers pre-allocate
 # max_seqs x canvas_length x vocab_size and OOM at higher values.
 max-model-len: 8192
+revision: f7f5b7f5fa82ffc52addd066915886d497f5517b
 max-num-seqs: 4
 tensor-parallel-size: 2  # cosmetic; profile h100_duo forces TP=2
 trust-remote-code: true
