@@ -1,0 +1,7 @@
+# Temporary GB10 smoke override: the prior 0.92 target exceeded free GPU memory.
+gpu-memory-utilization: 0.5
+max-model-len: 8192
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
