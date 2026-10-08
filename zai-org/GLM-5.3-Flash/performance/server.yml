@@ -1,0 +1,7 @@
+# Smoke-oriented config for OCP image-test on B200 (TP supplied by harness).
+# Upstream recipe: https://github.com/vllm-project/recipes/blob/main/models/zai-org/GLM-5.3-Flash.yaml
+max-model-len: 8192
+kv-cache-dtype: fp8
+reasoning-parser: glm47
+tool-call-parser: glm47
+enable-auto-tool-choice: true
