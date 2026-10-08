@@ -1,3 +1,6 @@
 # Hybrid Mamba MoE: each decode sequence needs one Mamba cache block.
 # On a single GPU the default max_num_seqs (256) exceeds available blocks.
 max-num-seqs: 64
+# max-model-len defaults to 262144 which requires more KV cache than
+# available on a single GPU. Limit to 8192 (same as Qwen3.6-35B-A3B).
+max-model-len: 8192
