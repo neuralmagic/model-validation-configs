@@ -1,0 +1,3 @@
+# Hybrid Mamba MoE: each decode sequence needs one Mamba cache block.
+# On a single GPU the default max_num_seqs (256) exceeds available blocks.
+max-num-seqs: 64
