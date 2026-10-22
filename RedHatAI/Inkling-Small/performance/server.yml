@@ -1,0 +1,9 @@
+# RedHatAI/Inkling-Small (h100_quad TP4 / b200_quad TP4, ~266 GiB BF16 MoE).
+# h100_quad: OOM during routed-experts weight creation at TP4 (2 GiB alloc,
+# 1.93 GiB free of 79.17 GiB/GPU; 75 GiB already allocated). ~66.5 GiB of
+# weights per GPU leaves no activation/KV headroom on 80 GiB H100.
+# b200_quad passes (180 GiB/GPU). Move h100 to TP8 (h100_octo, ~33 GiB/GPU).
+max-model-len: 8192
+tensor-parallel-size: 8
+trust-remote-code: true
+uvicorn-log-level: debug

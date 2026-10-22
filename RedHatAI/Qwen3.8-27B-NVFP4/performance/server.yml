@@ -1,0 +1,10 @@
+# Qwen3.8-27B-NVFP4 (GDN/mamba hybrid, NVFP4 quantized).
+# h100_solo at TP1: max_num_seqs 1024 (default) exceeds available Mamba cache
+# blocks (950) and blocks cudagraph capture. Cap max-num-seqs below the block
+# count (a100/b200 passed without this; cap is safe for all profiles).
+max-model-len: 8192
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
+max-num-seqs: 512
