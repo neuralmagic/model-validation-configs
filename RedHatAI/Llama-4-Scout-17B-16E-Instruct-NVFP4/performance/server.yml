@@ -1,0 +1,9 @@
+# Llama-4-Scout-17B-16E-Instruct-NVFP4 (a100_solo_wdc, TP1).
+# KV cache needs 1.5 GiB vs 1.49 GiB available at max-model-len 8192
+# (estimated max ~8112). Raise gpu-memory-utilization headroom so the full
+# 8192 context fits; FP8-dynamic sibling uses max-model-len 4096 at TP2.
+max-model-len: 8192
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+gpu-memory-utilization: 0.95
