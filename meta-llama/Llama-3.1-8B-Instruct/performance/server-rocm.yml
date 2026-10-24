@@ -1,0 +1,14 @@
+# Keep the complete server configuration: server-rocm.yml replaces server.yml.
+# Compact XGrammar avoids the ROCm structured-output whitespace loop:
+# https://github.com/neuralmagic/nm-cicd/actions/runs/40018903864
+enable-chunked-prefill: true
+max-model-len: 4096
+tensor-parallel-size: 1
+trust-remote-code: true
+enable-auto-tool-choice: true
+tool-call-parser: llama3_json
+uvicorn-log-level: debug
+chat-template: /opt/app-root/template/tool_chat_template_llama3.2_json.jinja
+structured-outputs-config:
+  backend: xgrammar
+  disable_any_whitespace: true
