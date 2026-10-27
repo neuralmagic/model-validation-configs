@@ -1,0 +1,10 @@
+# ROCm static FP8: auto-selected AITER MoE corrupts logits on MI300X.
+# Explicit Triton MoE passed unchanged smoke with no corrupt-logits requests:
+# https://github.com/neuralmagic/nm-cicd/actions/runs/40025428268
+max-model-len: 8192
+tensor-parallel-size: 1
+trust-remote-code: true
+uvicorn-log-level: debug
+no-enable-prefix-caching: true
+kernel-config:
+  moe_backend: triton
