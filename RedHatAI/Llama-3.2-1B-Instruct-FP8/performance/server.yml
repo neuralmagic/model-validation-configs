@@ -1,0 +1,5 @@
+tensor-parallel-size: 1
+max-model-len: 4096
+gpu-memory-utilization: 0.05
+enforce-eager: true
+safetensors-load-strategy: eager
