@@ -3,3 +3,4 @@ max-model-len: 4096
 gpu-memory-utilization: 0.05
 enforce-eager: true
 safetensors-load-strategy: eager
+linear-backend: cutlass
