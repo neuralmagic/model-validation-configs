@@ -1,6 +1,0 @@
-# Tracking: INFERENG-11998
-spec_config:
-  speculative-config:
-    method: mtp
-    model: deepseek-ai/DeepSeek-V4-Flash
-    num_speculative_tokens: 2
