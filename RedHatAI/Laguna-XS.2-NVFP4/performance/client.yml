@@ -1,0 +1,13 @@
+# Use the upstream tokenizer with the Transformers 5.17 rope_parameters fix.
+# Remove this override once the RedHatAI model metadata includes that fix.
+# Tracking: https://huggingface.co/RedHatAI/Laguna-XS.2-NVFP4/discussions/1
+processor: poolside/Laguna-XS.2-FP8
+processor-args:
+  revision: c452feafee73c20a4b5fbc1ba8ff58a868d95150
+data:
+  prompt_tokens: 1000
+  output_tokens: 1000
+rate-type: concurrent
+max-seconds: 200
+max-requests: 100
+rate: 5,10,15,25

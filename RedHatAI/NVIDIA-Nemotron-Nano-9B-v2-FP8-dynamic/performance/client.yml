@@ -1,0 +1,14 @@
+# Use the original model's tokenizer and config, which omits time_step_limit.
+# The RedHatAI config's [0.0, null] fails Transformers 5.17 validation.
+# Remove this override once the RedHatAI model metadata is corrected.
+# Tracking: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-Nano-9B-v2-FP8-dynamic/discussions/2
+processor: nvidia/NVIDIA-Nemotron-Nano-9B-v2
+processor-args:
+  revision: 6533e8de2c68e4536bf7c411d7a3ce5734111476
+data:
+  prompt_tokens: 1000
+  output_tokens: 1000
+rate-type: concurrent
+max-seconds: 200
+max-requests: 100
+rate: 5,10,15,25
