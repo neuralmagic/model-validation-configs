@@ -1,0 +1,5 @@
+# From vllm-project/recipes models/zai-org/GLM-5.3-Flash.yaml
+spec_config:
+  speculative-config:
+    method: mtp
+    num_speculative_tokens: 2
