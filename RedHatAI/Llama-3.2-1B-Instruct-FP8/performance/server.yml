@@ -1,7 +1,9 @@
+# Only selected by nm-cicd's explicit dgx-spark config profile.
+# Standard dense Qwen2.5 serving needs no special quantization backend.
 tensor-parallel-size: 1
 max-model-len: 4096
-gpu-memory-utilization: 0.05
+gpu-memory-utilization: 0.1
+kv-cache-memory-bytes: 2147483648
 enforce-eager: true
 safetensors-load-strategy: eager
 linear-backend: cutlass
-
